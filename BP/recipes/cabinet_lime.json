@@ -1,0 +1,32 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:cabinet_lime"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "AAA",
+        "BBB",
+        "CCC"
+      ],
+      "key": {
+        "A": {
+          "item": "block:plastic_lime"
+        },
+        "B": {
+          "item": "block:door_plastic"
+        },
+        "C": {
+          "item": "block:plastic_white"
+        }
+      },
+      "result": {
+        "item": "block:cabinet_lime",
+        "count": 3
+      }
+    }
+  }
+  

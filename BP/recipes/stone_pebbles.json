@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:stone_pebbles"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:cobblestone"
+        }
+      },
+      "result": {
+        "item": "block:stone_pebbles",
+        "count": 3
+      }
+    }
+  }
+  

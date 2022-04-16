@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "block:water_dispenser"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "block:plastic_white"
+      },
+      "X": {
+        "item": "minecraft:dispenser"
+      }
+    },
+    "result": {
+      "item": "block:water_dispenser"
+    }
+  }
+}

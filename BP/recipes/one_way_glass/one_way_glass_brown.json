@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+      "description": {
+      "identifier": "block:one_way_glass_brown"
+      },
+      "tags": [ "crafting_table" ],
+      "ingredients": [
+        {
+          "item": "minecraft:amethyst_shard",
+          "data": 0
+        },
+        {
+          "item": "minecraft:glass",
+          "data": 0
+        },
+        {
+           "item": "minecraft:brown_dye",
+           "data": 0
+         }
+      ],
+      "result": {
+        "item": "block:one_way_glass_brown",
+        "count": 1
+      }
+    }
+  }
+  

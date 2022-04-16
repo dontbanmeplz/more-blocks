@@ -1,0 +1,108 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:block_light_lime",
+            "properties": {
+                "light:toggle": [ false, true ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "block_light"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "block_light_screen_on_lime",
+                    "render_method": "blend"
+                },
+                "frame": {
+                    "texture": "furniture_default_color",
+                    "render_method": "blend"
+                },
+                "base_frame": {
+                    "texture": "plastic_gray",
+                    "render_method": "blend"
+                },
+                "face": {
+                    "texture": "block_light_screen_on_lime",
+                    "render_method": "blend"
+                },
+                "bulb": {
+                    "texture": "smooth_plastic_lime",
+                    "render_method": "blend"
+                },
+                "base_bulb": {
+                    "texture": "plastic_gray",
+                    "render_method": "blend"
+                }
+            },
+            "minecraft:geometry": "geometry.block_light",
+            "minecraft:loot": "loot_tables/blocks/block_light_lime.json",
+            "minecraft:destroy_time": 2.0,
+			"minecraft:block_light_absorption": 0.0,
+			"minecraft:block_light_emission": 1.0,
+            "minecraft:breakonpush": true,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:on_interact": {
+                "event": "light:toggle"
+            }
+        },
+        "permutations": [
+            {
+                "condition": "!query.block_property('light:toggle')",
+                "components": {
+                    "minecraft:block_light_emission": 0.0,
+			        "minecraft:block_light_absorption": 0.0,
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "block_light_screen_off_lime",
+                            "render_method": "blend"
+					    },
+					    "frame": {
+                            "texture": "furniture_default_color",
+                            "render_method": "blend"
+					    },
+					   "base_frame": {
+                            "texture": "plastic_gray",
+                            "render_method": "blend"
+					    },
+					    "face": {
+                            "texture": "block_light_screen_off_lime",
+                            "render_method": "blend"
+					    },
+					    "bulb": {
+                            "texture": "smooth_plastic_lime",
+                            "render_method": "blend"
+					    },
+					    "base_bulb": {
+                            "texture": "plastic_gray",
+                            "render_method": "blend"
+					    }
+				    }
+				}
+            }
+        ],
+        "events": {
+            "light:toggle": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "light:toggle": "query.block_property('light:toggle') ? false : true"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": [ "playsound random.click @s[r=5]" ],
+                            "target": "player"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

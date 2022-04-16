@@ -1,0 +1,85 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:modern_bookshelf_green",
+            "properties": {
+                "facing:direction": [ 2, 3, 4, 5 ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "modern_bookshelf"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "furniture_side_green",
+                    "render_method": "opaque"
+                },
+                "south": {
+                    "texture": "modern_bookshelf_green",
+                    "render_method": "opaque"
+                },
+                "up": {
+                    "texture": "plastic_green",
+                    "render_method": "opaque"
+                },
+                "down": {
+                    "texture": "plastic_white",
+                    "render_method": "opaque"
+                }
+            },
+            "tag:plastic": {},
+            "minecraft:unit_cube": {},
+            "minecraft:pick_collision": true,
+            "minecraft:entity_collision": true,
+            "minecraft:map_color": "#4A5D23",
+            "minecraft:explosion_resistance": 7.5,
+            "minecraft:loot": "loot_tables/blocks/modern_bookshelf_green.json",
+            "minecraft:destroy_time": 2,
+            "minecraft:block_light_emission": 0,
+            "minecraft:block_light_absorption": 15,
+            "minecraft:on_player_placing": {
+                "event": "facing_direction"
+            },
+            "minecraft:flammable": {
+                "flame_odds": 30,
+                "burn_odds": 30
+            }
+        },
+        "events": {
+            "facing_direction": {
+                "set_block_property": {
+                    "facing:direction": "(query.cardinal_facing_2d)"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('facing:direction') == 2",
+                "components": {
+                    "minecraft:rotation": [ 0, 0, 0 ]
+                }
+            },
+            {
+                "condition": "q.block_property('facing:direction') == 3",
+                "components": {
+                    "minecraft:rotation": [ 0, 180, 0 ]
+                }
+            },
+            {
+                "condition": "q.block_property('facing:direction') == 4",
+                "components": {
+                    "minecraft:rotation": [ 0, 90, 0 ]
+                }
+            },
+            {
+                "condition": "q.block_property('facing:direction') == 5",
+                "components": {
+                    "minecraft:rotation": [ 0, 270, 0 ]
+                }
+            }
+        ]
+    }
+}

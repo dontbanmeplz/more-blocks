@@ -1,0 +1,36 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:ceramic_tile_blue"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "###",
+        "DXD",
+        "CCC"
+      ],
+      "key": {
+        "X": {
+          "item": "minecraft:bucket",
+          "data": 8
+        },
+        "#": {
+          "item": "minecraft:sand"
+        },
+        "C": {
+          "item": "minecraft:clay"
+         },
+         "D": {
+          "item": "minecraft:dye",
+          "data": 18
+         }
+      },
+      "result": [
+      { "item": "block:ceramic_tile_blue", "count": 3 },
+      { "item": "minecraft:bucket", "data": 0 }
+    ]
+  }
+}

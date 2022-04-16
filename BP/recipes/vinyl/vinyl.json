@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "block:vinyl"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "item:liquid_plastic"
+      }
+    },
+    "result": {
+        "item": "block:vinyl"
+    }
+  }
+}

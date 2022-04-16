@@ -1,0 +1,70 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "block:spotlight",
+			"properties": {
+				"facing:direction": [0, 1, 2]
+			}
+		},
+		"components": {
+		    "minecraft:creative_category": {
+                "category": "construction",
+                "group": "light"
+            },
+            "minecraft:material_instances": {
+				"*": {
+					"texture": "spotlight_side",
+					"render_method": "opaque"
+				},
+				"ends": {
+					"texture": "spotlight_light",
+					"render_method": "opaque"
+				},
+				"up": "ends",
+				"down": "ends"
+			},
+		    "tag:plastic": {},
+		    "minecraft:unit_cube": {},
+		    "minecraft:loot": "loot_tables/blocks/spotlight.json",
+			"minecraft:destroy_time": 2,
+			"minecraft:explosion_resistance": 7.5,
+			"minecraft:block_light_emission": 1.0 ,
+			"minecraft:map_color": "#3B3B3B",
+			"minecraft:flammable": {
+				"flame_odds": 0,
+				"burn_odds": 0
+			},
+			"minecraft:on_player_placing": {
+				"event": "facing_direction"
+			}
+		},
+		"events": {
+			"facing_direction": {
+				"set_block_property": {
+					"facing:direction": "math.floor(query.cardinal_block_face_placed_on / 2.0)"
+				}
+			}
+		},
+		"permutations": [
+             {
+				"condition": "query.block_property('facing:direction') == 0",
+				"components": {
+					"minecraft:rotation": [0, 0, 0]
+				}
+			},
+			{
+				"condition": "query.block_property('facing:direction') == 1",
+				"components": {
+					"minecraft:rotation": [90, 0, 0]
+				}
+			},
+			{
+				"condition": "query.block_property('facing:direction') == 2",
+				"components": {
+					"minecraft:rotation": [0, 0, 90]
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,134 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:table_acacia",
+            "properties": {
+                "states:north": [ 0, 1 ],
+                "states:east": [ 0, 1 ],
+                "states:south": [ 0, 1 ],
+                "states:west": [ 0, 1 ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "table_wood"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "acacia_planks",
+                    "render_method": "opaque"
+                },
+                "legs": {
+                    "texture": "log_acacia",
+                    "render_method": "opaque"
+                }
+            },
+            "tag:wood": {},
+            "tag:wood_table": {},
+            "minecraft:pick_collision": true,
+            "minecraft:entity_collision": true,
+            "minecraft:map_color": "#434547",
+            "minecraft:explosion_resistance": 7.5,
+            "minecraft:loot": "loot_tables/blocks/table_acacia.json",
+            "minecraft:geometry": "geometry.table",
+            "minecraft:destroy_time": 4,
+            "minecraft:block_light_emission": 0,
+            "minecraft:block_light_absorption": 0,
+            "minecraft:flammable": {
+                "flame_odds": 30,
+                "burn_odds": 30
+            },
+            "minecraft:ticking": {
+                "looping": true,
+                "range": [ 0, 0 ],
+                "on_tick": {
+                    "event": "set_states",
+                    "target": "self"
+                }
+            },
+            "minecraft:part_visibility": {
+                "rules": {
+                    "default": "q.block_property('states:north') == 0 && q.block_property('states:east') == 0 && q.block_property('states:south') == 0 && q.block_property('states:west') == 0",
+                    "north": "q.block_property('states:north') == 1 && q.block_property('states:east') == 0 && q.block_property('states:south') == 0 && q.block_property('states:west') == 0",
+                    "east": "q.block_property('states:north') == 0 && q.block_property('states:east') == 1 && q.block_property('states:south') == 0 && q.block_property('states:west') == 0",
+                    "south": "q.block_property('states:north') == 0 && q.block_property('states:east') == 0 && q.block_property('states:south') == 1 && q.block_property('states:west') == 0",
+                    "west": "q.block_property('states:north') == 0 && q.block_property('states:east') == 0 && q.block_property('states:south') == 0 && q.block_property('states:west') == 1",
+                    "north_east": "q.block_property('states:north') == 1 && q.block_property('states:east') == 1 && q.block_property('states:south') == 0 && q.block_property('states:west') == 0",
+                    "north_west": "q.block_property('states:north') == 1 && q.block_property('states:east') == 0 && q.block_property('states:south') == 0 && q.block_property('states:west') == 1",
+                    "south_east": "q.block_property('states:north') == 0 && q.block_property('states:east') == 1 && q.block_property('states:south') == 1 && q.block_property('states:west') == 0",
+                    "south_west": "q.block_property('states:north') == 0 && q.block_property('states:east') == 0 && q.block_property('states:south') == 1 && q.block_property('states:west') == 1",
+                    "north_south": "q.block_property('states:north') == 1 && q.block_property('states:east') == 0 && q.block_property('states:south') == 1 && q.block_property('states:west') == 0",
+                    "east_west": "q.block_property('states:north') == 0 && q.block_property('states:east') == 1 && q.block_property('states:south') == 0 && q.block_property('states:west') == 1",
+                    "north_only": "q.block_property('states:north') == 0 && q.block_property('states:east') == 1 && q.block_property('states:south') == 1 && q.block_property('states:west') == 1",
+                    "east_only": "q.block_property('states:north') == 1 && q.block_property('states:east') == 0 && q.block_property('states:south') == 1 && q.block_property('states:west') == 1",
+                    "south_only": "q.block_property('states:north') == 1 && q.block_property('states:east') == 1 && q.block_property('states:south') == 0 && q.block_property('states:west') == 1",
+                    "west_only": "q.block_property('states:north') == 1 && q.block_property('states:east') == 1 && q.block_property('states:south') == 1 && q.block_property('states:west') == 0"
+                }
+            }
+        },
+        "events": {
+            "set_states": {
+                "sequence": [
+                    {
+                        //north
+                        "condition": "q.block_neighbor_has_all_tags(0,0,-1,'wood_table')",
+                        "set_block_property": {
+                            "states:north": 1
+                        }
+                    },
+                    {
+                        //east
+                        "condition": "q.block_neighbor_has_all_tags(1,0,0,'wood_table')",
+                        "set_block_property": {
+                            "states:east": 1
+                        }
+                    },
+                    {
+                        //south
+                        "condition": "q.block_neighbor_has_all_tags(0,0,1,'wood_table')",
+                        "set_block_property": {
+                            "states:south": 1
+                        }
+                    },
+                    {
+                        //west
+                        "condition": "q.block_neighbor_has_all_tags(-1,0,0,'wood_table')",
+                        "set_block_property": {
+                            "states:west": 1
+                        }
+                    },
+                    {
+                        //!north
+                        "condition": "!q.block_neighbor_has_all_tags(0,0,-1,'wood_table')",
+                        "set_block_property": {
+                            "states:north": 0
+                        }
+                    },
+                    {
+                        //!east
+                        "condition": "!q.block_neighbor_has_all_tags(1,0,0,'wood_table')",
+                        "set_block_property": {
+                            "states:east": 0
+                        }
+                    },
+                    {
+                        //!south
+                        "condition": "!q.block_neighbor_has_all_tags(0,0,1,'wood_table')",
+                        "set_block_property": {
+                            "states:south": 0
+                        }
+                    },
+                    {
+                        //!west
+                        "condition": "!q.block_neighbor_has_all_tags(-1,0,0,'wood_table')",
+                        "set_block_property": {
+                            "states:west": 0
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

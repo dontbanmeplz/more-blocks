@@ -1,0 +1,26 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:table_yellow"
+      },
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "PPP",
+        "S S"
+      ],
+      "key": {
+        "P": {
+           "item": "block:slab_plastic_yellow"
+         },
+         "S": {
+           "item": "block:steel_rod"
+         }
+      },
+      "result": {
+        "item": "block:table_yellow",
+        "count": 2
+      }
+    }
+  }
+  

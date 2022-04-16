@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "block:chair_warped"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "#  ",
+      "###",
+      "X X"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:warped_slab",
+        "data": 0
+      },
+      "X": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "block:chair_warped"
+    }
+  }
+}

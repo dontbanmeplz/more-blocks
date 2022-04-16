@@ -1,0 +1,44 @@
+{
+"format_version": "1.12",
+"minecraft:recipe_shapeless": {
+"description": {
+	"identifier": "block:marble_tile_cyan"
+	},
+"tags": [ "crafting_table" ],
+"ingredients": [
+	   {
+			"item": "minecraft:dye",
+			"data": 6
+		},
+		{
+			"item": "minecraft:quartz"
+         },
+         {
+			"item": "minecraft:quartz"
+         },
+         {
+			"item": "minecraft:quartz"
+         },
+         {
+			"item": "minecraft:quartz"
+         },
+         {
+			"item": "minecraft:stone"
+         },
+         {
+			"item": "minecraft:stone"
+         },
+         {
+			"item": "minecraft:stone"
+         },
+         {
+			"item": "minecraft:stone"
+         }
+       ],
+
+     "result": {
+		 "item": "block:marble_tile_cyan",
+		 "count": 4
+      }
+   }
+}

@@ -1,0 +1,32 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:crimson_drawer"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "AAA",
+        "BBB",
+        "CCC"
+      ],
+      "key": {
+        "A": {
+          "item": "minecraft:crimson_stem"
+        },
+        "B": {
+          "item": "minecraft:crimson_trapdoor"
+        },
+        "C": {
+           "item": "minecraft:crimson_planks"
+         }
+      },
+      "result": {
+        "item": "block:crimson_drawer",
+        "count": 3
+      }
+    }
+  }
+  

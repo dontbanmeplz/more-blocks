@@ -1,0 +1,81 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "block:crimson_cabinet",
+      "properties": {
+        "block:placement_state": [ 1, 2, 3, 4, 5, 6 ]
+      }
+    },
+    "components": {
+          "minecraft:creative_category": {
+              "category": "construction",
+              "group": "cabinet_wood"
+           },
+           "minecraft:material_instances": {
+                "*": {
+                    "texture": "crimson_side",
+                    "render_method": "opaque"
+                },
+                "south": {
+                    "texture": "crimson_cabinet",
+                    "render_method": "opaque"
+                },
+                "ends": {
+                    "texture": "crimson_top",
+                    "render_method": "opaque"
+                },
+                "up": "ends",
+                "down": "ends"
+            },
+           "tag:plastic": {},
+           "minecraft:loot": "loot_tables/blocks/crimson_cabinet.json",
+           "minecraft:destroy_time": 2.0,
+           "minecraft:unit_cube": {},
+           "minecraft:map_color": "#4F4A40",
+           "minecraft:flammable": {
+           "flame_odds": 30,
+           "burn_odds": 30
+           },
+           "minecraft:on_player_placing": {
+           "event": "placement_state"
+           },
+           "minecraft:block_light_absorption": 0,
+           "minecraft:block_light_emission": 0.0,
+           "minecraft:explosion_resistance": 7.5
+          },
+         "events": {
+            "placement_state": {
+                "set_block_property": {
+                     "block:placement_state": "(query.cardinal_facing_2d)"
+             }
+         }
+    },
+    "permutations": [
+            {
+                "condition": "query.block_property('block:placement_state') == 2",
+                "components": {
+                    "minecraft:rotation": [ 0, 0, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 3",
+                "components": {
+                    "minecraft:rotation": [ 0, 180, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 4",
+                "components": {
+                    "minecraft:rotation": [ 0, 90, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 5",
+                "components": {
+                    "minecraft:rotation": [ 0, 270, 0 ]
+                }
+            }
+        ]
+    }
+}

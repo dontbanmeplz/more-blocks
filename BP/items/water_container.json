@@ -1,0 +1,28 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "item:water_container",
+      "category": "items"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "water_container"
+      },
+      "minecraft:display_name":{
+        "value": "Water Container"
+      },
+      "minecraft:creative_category": {
+      "parent": "items"
+      },
+      "minecraft:block_placer": {
+        "block": "block:water_container",
+        "use_block_description": true
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:hand_equipped": false,
+      "minecraft:allow_off_hand": false,
+      "minecraft:foil": false
+    }
+  }
+}

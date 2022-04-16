@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Added thousands of Modern Blocks in the game. \nBy: Vechrozilator",
+        "name": "Modern Blocks (Behavior)",
+        "uuid": "04feb15f-6a52-4ef4-a7dd-aa3bdae1f16c",
+        "version": [1, 1, 8],
+        "min_engine_version": [ 1, 16, 0 ]
+    },
+    "modules": [
+        {
+            "description": "Added thousands of Modern Blocks in the game. \nBy: Vechrozilator",
+            "type": "data",
+            "uuid": "f283b7af-1d94-42c3-be18-d43eebe886c7",
+            "version": [1, 1, 8]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "cde03f2c-2b27-41ca-8046-8c7533c1299c",
+            "version": [1, 1, 8]
+        }
+    ]
+}

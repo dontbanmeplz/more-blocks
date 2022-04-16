@@ -1,0 +1,26 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:door_plastic"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "##",
+        "##",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "item:liquid_plastic"
+        }
+      },
+      "result": {
+        "item": "block:door_plastic",
+        "count": 3
+      }
+    }
+  }
+  

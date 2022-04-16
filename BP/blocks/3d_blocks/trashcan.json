@@ -1,0 +1,104 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:trashcan",
+            "properties": {
+                "facing:direction": [ 2, 3, 4, 5 ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "items"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "trashcan_side",
+                    "render_method": "opaque"
+                },
+                "side": {
+                    "texture": "trashcan_side",
+                    "render_method": "opaque"
+                },
+                "cap": {
+                    "texture": "trashcan_cap",
+                    "render_method": "opaque"
+                },
+                "bottom": {
+                    "texture": "trashcan_bottom",
+                    "render_method": "opaque"
+                },
+                "top": {
+                    "texture": "trashcan_top",
+                    "render_method": "opaque"
+                },
+                "handle": {
+                    "texture": "smooth_plastic_gray",
+                    "render_method": "opaque"
+                }
+            },
+            "tag:metal": {},
+            "minecraft:aim_collision": {
+                "origin": [ -7, 0, -7 ],
+                "size": [ 14, 15, 14 ]
+            },
+            "minecraft:block_collision": {
+                "origin": [ -7, 0, -7 ],
+                "size": [ 14, 15, 14 ]
+            },
+            "minecraft:loot": "loot_tables/blocks/trashcan.json",
+            "minecraft:geometry": "geometry.trashcan",
+            "minecraft:destroy_time": 4,
+            "minecraft:on_player_placing": {
+                "event": "placement_state"
+            },
+            "minecraft:on_interact": {
+                "event": "delete_items"
+            },
+            "minecraft:map_color": "#545454",
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_filter": 0
+        },
+        "events": {
+            "placement_state": {
+                "set_block_property": {
+                    "facing:direction": "(query.cardinal_facing_2d)"
+                }
+            },
+            "delete_items": {
+               "decrement_stack": {}
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('facing:direction') == 2",
+                "components": {
+                    "minecraft:rotation": [ 0, 0, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('facing:direction') == 3",
+                "components": {
+                    "minecraft:rotation": [ 0, 180, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('facing:direction') == 4",
+                "components": {
+                    "minecraft:rotation": [ 0, 90, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('facing:direction') == 5",
+                "components": {
+                    "minecraft:rotation": [ 0, 270, 0 ]
+                }
+            }
+        ]
+    }
+}

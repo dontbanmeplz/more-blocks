@@ -1,0 +1,21 @@
+{
+"format_version": "1.12",
+"minecraft:recipe_shapeless": {
+"description": {
+	"identifier": "block:ceramic_hopscotch_tile_cyan"
+	},
+"tags": [ "crafting_table" ],
+"ingredients": [
+	   {
+			"item": "block:ceramic_tile_cyan"
+		},
+		{
+			"item": "item:hopscotch_pattern"
+      }
+    ],
+
+"result": {
+		 "item": "block:ceramic_hopscotch_tile_cyan"
+		 }
+	}
+}

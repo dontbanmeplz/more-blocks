@@ -1,0 +1,10 @@
+﻿gamerule sendcommandfeedback false
+give @s block:wood_tile
+give @s block:wood_tile_spruce
+give @s block:wood_tile_birch
+give @s block:wood_tile_jungle
+give @s block:wood_tile_acacia
+give @s block:wood_tile_dark_oak
+give @s block:wood_tile_crimson
+give @s block:wood_tile_warped
+gamerule sendcommandfeedback true

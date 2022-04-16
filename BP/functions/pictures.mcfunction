@@ -1,0 +1,12 @@
+﻿gamerule sendcommandfeedback false
+give @s item:picture_1
+give @s item:picture_2
+give @s item:picture_3
+give @s item:picture_4
+give @s item:picture_5
+give @s item:picture_6
+give @s item:picture_7
+give @s item:picture_8
+give @s item:picture_9
+give @s item:picture_10
+gamerule sendcommandfeedback true

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "block:speaker_block"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:jukebox"
+      },
+      "#": {
+        "item": "block:plastic_gray"
+      }
+    },
+    "result": {
+        "item": "block:speaker_block"
+    }
+  }
+}

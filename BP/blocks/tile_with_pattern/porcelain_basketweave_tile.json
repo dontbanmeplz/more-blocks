@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:porcelain_basketweave_tile"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.name.porcelaintilePattern"
+            },
+            "tag:stone": {},
+            "minecraft:unit_cube": {},
+            "minecraft:map_color": "#67686D,",
+            "minecraft:explosion_resistance": 20,
+            "minecraft:destroy_time": 10,
+            "minecraft:block_light_emission": 0,
+            "minecraft:block_light_filter": 15,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            }
+        }
+    }
+}

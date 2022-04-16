@@ -1,0 +1,21 @@
+{
+"format_version": "1.12",
+"minecraft:recipe_shapeless": {
+"description": {
+	"identifier": "block:marble_palazzo_tile_purple"
+	},
+"tags": [ "crafting_table" ],
+"ingredients": [
+	   {
+			"item": "block:marble_tile_purple"
+		},
+		{
+			"item": "item:palazzo_pattern"
+      }
+    ],
+
+"result": {
+		 "item": "block:marble_palazzo_tile_purple"
+		 }
+	}
+}

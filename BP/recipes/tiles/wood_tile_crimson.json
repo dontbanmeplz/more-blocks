@@ -1,0 +1,27 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:wood_tile_crimson"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "#X",
+        "X#"
+      ],
+      "key": {
+        "X": {
+          "item": "minecraft:crimson_planks"
+        },
+        "#": {
+          "item": "block:ceramic_tile_white"
+        }
+      },
+      "result": {
+         "item": "block:wood_tile_crimson",
+         "count": 2
+      }
+   }
+}

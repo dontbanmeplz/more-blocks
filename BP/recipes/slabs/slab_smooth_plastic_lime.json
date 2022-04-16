@@ -1,0 +1,24 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:slab_smooth_plastic_lime"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "block:smooth_plastic_lime"
+        }
+      },
+      "result": {
+        "item": "block:slab_smooth_plastic_lime",
+        "count": 6
+      }
+    }
+  }
+  

@@ -1,0 +1,183 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:chair_lime",
+            "properties": {
+                "block:placement_state": [ 2, 3, 4, 5 ],
+                "block:geometry": [ "default", "bottom", "top" ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "chair"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "smooth_plastic_lime",
+                    "render_method": "opaque"
+                },
+                "legs": {
+                    "texture": "furniture_default_color",
+                    "render_method": "opaque"
+                },
+                "top": {
+                    "texture": "smooth_plastic_lime",
+                    "render_method": "opaque"
+                }
+            },
+            "tag:plastic": {},
+            "minecraft:aim_collision": {
+                "origin": [ -7, 0, -7 ],
+                "size": [ 14, 9, 15 ]
+            },
+            "minecraft:block_collision": {
+                "origin": [ -7, 0, -7 ],
+                "size": [ 14, 9, 15 ]
+            },
+            "minecraft:loot": "loot_tables/blocks/chair_lime.json",
+            "minecraft:geometry": "geometry.chair_placeholder",
+            "minecraft:destroy_time": 4,
+            "minecraft:explosion_resistance": 5,
+            "minecraft:breakonpush": true,
+            "minecraft:on_player_placing": {
+                "event": "facing_direction"
+            },
+            "minecraft:map_color": "#62AD18",
+            "minecraft:flammable": {
+                "flame_odds": 30,
+                "burn_odds": 30
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_filter": 0,
+            "minecraft:ticking": {
+                "looping": true,
+                "range": [ 0, 0 ],
+                "on_tick": {
+                    "event": "set_states",
+                    "target": "self"
+                }
+            }
+        },
+        "events": {
+            "facing_direction": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "block:placement_state": "(query.cardinal_facing_2d)",
+                            "block:geometry": "'bottom'"
+                        }
+                    },
+                    {
+                        "set_block_at_pos": {
+                            "block_type": "block:chair_lime",
+                            "block_offset": [ 0, 1, 0 ]
+                        }
+                    }
+                ]
+            },
+            "set_states": {
+                "sequence": [
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,-1,0,'chairN','chairB')",
+                        "set_block_property": {
+                            "block:geometry": "'top'",
+                            "block:placement_state": 2
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,-1,0,'chairS','chairB')",
+                        "set_block_property": {
+                            "block:geometry": "'top'",
+                            "block:placement_state": 3
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,-1,0,'chairW','chairB')",
+                        "set_block_property": {
+                            "block:geometry": "'top'",
+                            "block:placement_state": 4
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,-1,0,'chairE','chairB')",
+                        "set_block_property": {
+                            "block:geometry": "'top'",
+                            "block:placement_state": 5
+                        }
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('block:placement_state') == 2",
+                "components": {
+                    "tag:chairN": {},
+                    "minecraft:rotation": [ 0, 0, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 3",
+                "components": {
+                    "tag:chairS": {},
+                    "minecraft:rotation": [ 0, 180, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 4",
+                "components": {
+                    "tag:chairW": {},
+                    "minecraft:rotation": [ 0, 90, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 5",
+                "components": {
+                    "tag:chairE": {},
+                    "minecraft:rotation": [ 0, 270, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:geometry') == 'bottom'",
+                "components": {
+                    "tag:chairB": {},
+                    "minecraft:geometry": "geometry.chair_bottom",
+                    "minecraft:placement_filter": {
+                        "conditions": [
+                            {
+                                "block_filter": [ "block:chair_lime" ],
+                                "allowed_faces": [ "down" ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('block:geometry') == 'top'",
+                "components": {
+                    "minecraft:geometry": "geometry.chair_top",
+                    "minecraft:loot": "loot_tables/empty.json",
+                    "tag:chairT": {},
+                    "minecraft:aim_collision": {
+                        "origin": [ -7, 0, -7 ],
+                        "size": [ 14, 11, 2 ]
+                    },
+                    "minecraft:block_collision": {
+                        "origin": [ -7, 0, -7 ],
+                        "size": [ 14, 11, 2 ]
+                    },
+                    "minecraft:placement_filter": {
+                        "conditions": [
+                            {
+                                "block_filter": [ "block:chair_lime" ],
+                                "allowed_faces": [ "up" ]
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

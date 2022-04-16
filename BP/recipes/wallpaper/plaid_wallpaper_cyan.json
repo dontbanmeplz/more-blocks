@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "block:plaid_wallpaper_cyan"
+    },
+
+    "tags": [ "stonecutter" ],
+    "priority": 0,
+    "ingredients": [
+      {
+        "item": "minecraft:concrete",
+        "data": 9
+      }
+    ],
+    "result": {
+      "item": "block:plaid_wallpaper_cyan"
+    }
+  }
+}

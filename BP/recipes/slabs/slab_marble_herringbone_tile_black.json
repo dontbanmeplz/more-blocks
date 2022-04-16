@@ -1,0 +1,23 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:slab_marble_herringbone_tile_black"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "block:marble_herringbone_tile_black"
+        }
+      },
+      "result": {
+        "item": "block:slab_marble_herringbone_tile_black",
+        "count": 6
+      }
+    }
+  }

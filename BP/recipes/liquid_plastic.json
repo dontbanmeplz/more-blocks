@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "item:liquid_plastic"
+    },
+
+    
+    "tags": ["blast_furnace"],
+    "input": "minecraft:compound:29",
+    "output": "item:liquid_plastic"
+  }
+  
+}

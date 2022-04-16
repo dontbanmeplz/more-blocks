@@ -1,0 +1,21 @@
+{
+"format_version": "1.12",
+"minecraft:recipe_shapeless": {
+"description": {
+	"identifier": "block:birch_basketweave_tile"
+	},
+"tags": [ "crafting_table" ],
+"ingredients": [
+	   {
+			"item": "block:wood_tile_birch"
+		},
+		{
+			"item": "item:basketweave_pattern"
+      }
+    ],
+
+"result": {
+		 "item": "block:birch_basketweave_tile"
+		 }
+	}
+}

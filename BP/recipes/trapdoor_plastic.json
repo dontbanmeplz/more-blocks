@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:trapdoor_plastic"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "item:liquid_plastic"
+        }
+      },
+      "result": {
+        "item": "block:trapdoor_plastic",
+        "count": 2
+      }
+    }
+  }
+  

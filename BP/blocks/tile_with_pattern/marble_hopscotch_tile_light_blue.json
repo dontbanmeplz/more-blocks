@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:marble_hopscotch_tile_light_blue"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.name.marbletilePattern"
+            },
+            "tag:stone": {},
+            "minecraft:unit_cube": {},
+            "minecraft:map_color": "#268EC9",
+            "minecraft:explosion_resistance": 30,
+            "minecraft:destroy_time": 10,
+            "minecraft:block_light_emission": 0,
+            "minecraft:block_light_absorption": 15,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            }
+        }
+    }
+}

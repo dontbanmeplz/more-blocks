@@ -1,0 +1,172 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:fridge",
+            "properties": {
+                "block:placement_state": [ 2, 3, 4, 5, 6 ],
+                "block:geometry": [ "default", "bottom", "top" ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "fridge"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "smooth_plastic_white",
+                    "render_method": "opaque"
+                },
+                "handle": {
+                    "texture": "smooth_plastic_gray",
+                    "render_method": "opaque"
+                }
+            },
+            "tag:metal": {},
+            "minecraft:aim_collision": {
+                "origin": [ -7, 0, -8 ],
+                "size": [ 14, 16, 14 ]
+            },
+            "minecraft:block_collision": {
+                "origin": [ -7, 0, -8 ],
+                "size": [ 14, 16, 14 ]
+            },
+            "minecraft:loot": "loot_tables/blocks/fridge.json",
+            "minecraft:geometry": "geometry.fridge_placeholder",
+            "minecraft:destroy_time": 7,
+            "minecraft:explosion_resistance": 10,
+            "minecraft:immovable": true,
+            "minecraft:preventsjumping": true,
+            "minecraft:on_player_placing": {
+                "event": "facing_direction"
+            },
+            "minecraft:map_color": "#EBEBEB",
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_filter": 0,
+            "minecraft:ticking": {
+                "looping": true,
+                "range": [ 0, 0 ],
+                "on_tick": {
+                    "event": "set_states",
+                    "target": "self"
+                }
+            }
+        },
+        "events": {
+            "facing_direction": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "block:placement_state": "(query.cardinal_facing_2d)",
+                            "block:geometry": "'bottom'"
+                        }
+                    },
+                    {
+                        "set_block_at_pos": {
+                            "block_type": "block:fridge",
+                            "block_offset": [ 0, 1, 0 ]
+                        }
+                    }
+                ]
+            },
+            "set_states": {
+                "sequence": [
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,-1,0,'fridgeN','fridgeB')",
+                        "set_block_property": {
+                            "block:geometry": "'top'",
+                            "block:placement_state": 2
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,-1,0,'fridgeS','fridgeB')",
+                        "set_block_property": {
+                            "block:geometry": "'top'",
+                            "block:placement_state": 3
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,-1,0,'fridgeW','fridgeB')",
+                        "set_block_property": {
+                            "block:geometry": "'top'",
+                            "block:placement_state": 4
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,-1,0,'fridgeE','fridgeB')",
+                        "set_block_property": {
+                            "block:geometry": "'top'",
+                            "block:placement_state": 5
+                        }
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('block:placement_state') == 2",
+                "components": {
+                    "tag:fridgeN": {},
+                    "minecraft:rotation": [ 0, 0, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 3",
+                "components": {
+                    "tag:fridgeS": {},
+                    "minecraft:rotation": [ 0, 180, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 4",
+                "components": {
+                    "tag:fridgeW": {},
+                    "minecraft:rotation": [ 0, 90, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 5",
+                "components": {
+                    "tag:fridgeE": {},
+                    "minecraft:rotation": [ 0, 270, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:geometry') == 'bottom'",
+                "components": {
+                    "tag:fridgeB": {},
+                    "minecraft:geometry": "geometry.fridge_bottom",
+                    "minecraft:placement_filter": {
+                        "conditions": [
+                            {
+                                "block_filter": [ "block:fridge" ],
+                                "allowed_faces": [ "down" ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('block:geometry') == 'top'",
+                "components": {
+                    "tag:fridgeT": {},
+                    "minecraft:geometry": "geometry.fridge_top",
+                    "minecraft:loot": "loot_tables/empty.json",
+                    "minecraft:placement_filter": {
+                        "conditions": [
+                            {
+                                "block_filter": [ "block:fridge" ],
+                                "allowed_faces": [ "up" ]
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

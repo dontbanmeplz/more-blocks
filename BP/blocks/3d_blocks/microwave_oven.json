@@ -1,0 +1,97 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:microwave_oven",
+            "properties": {
+                "block:placement_state": [ 2, 3, 4, 5 ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "items"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "microwave_oven_color",
+                    "render_method": "blend"
+                },
+                "glass": {
+                    "texture": "microwave_oven_glass",
+                    "render_method": "blend"
+                },
+                "front": {
+                    "texture": "microwave_oven_front",
+                    "render_method": "blend"
+                },
+                "frame": {
+                    "texture": "smooth_plastic_gray",
+                    "render_method": "blend"
+                },
+                "foot": {
+                    "texture": "smooth_plastic_black",
+                    "render_method": "blend"
+                },
+                "button": {
+                    "texture": "smooth_plastic_gray",
+                    "render_method": "blend"
+                }
+            },
+            "minecraft:pick_collision": {
+                "origin": [ -8, 0, -6 ],
+                "size": [ 16, 10, 11 ]
+            },
+            "minecraft:entity_collision": {
+                "origin": [ -8, 0, -6 ],
+                "size": [ 16, 10, 11 ]
+            },
+            "minecraft:loot": "loot_tables/blocks/microwave_oven.json",
+            "minecraft:geometry": "geometry.microwave_oven",
+            "minecraft:destroy_time": 4,
+            "minecraft:on_player_placing": {
+                "event": "block:placement_state"
+            },
+            "minecraft:map_color": "#C0C0C0",
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_absorption": 0.2
+        },
+        "events": {
+            "block:placement_state": {
+                "set_block_property": {
+                    "block:placement_state": "(query.cardinal_facing_2d)"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('block:placement_state') == 2",
+                "components": {
+                    "minecraft:block_light_emission": 0.0
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 3",
+                "components": {
+                    "minecraft:rotation": [ 0, 180, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 4",
+                "components": {
+                    "minecraft:rotation": [ 0, 90, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 5",
+                "components": {
+                    "minecraft:rotation": [ 0, 270, 0 ]
+                }
+            }
+        ]
+    }
+}

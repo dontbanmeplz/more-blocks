@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:stone_hopscotch_tile"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.name.stonetilePattern"
+            },
+            "tag:stone": {},
+            "minecraft:unit_cube": {},
+            "minecraft:map_color": "#A0A09E",
+            "minecraft:explosion_resistance": 15,
+            "minecraft:destroy_time": 8,
+            "minecraft:block_light_emission": 0,
+            "minecraft:block_light_filter": 15,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            }
+        }
+    }
+}

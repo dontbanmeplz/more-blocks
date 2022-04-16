@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "item:led_light_white"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "GGG",
+      "GXG",
+      " I"
+    ],
+    "key": {
+      "G": {
+        "item": "minecraft:stained_glass_pane",
+        "data": 0
+      },
+      "I": {
+        "item": "minecraft:iron_nugget"
+      },
+      "X": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "result": {
+        "item": "item:led_light_white"
+    }
+  }
+}

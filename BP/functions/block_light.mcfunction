@@ -1,0 +1,14 @@
+﻿gamerule sendcommandfeedback false
+give @s block:block_light_white
+give @s block:block_light_red
+give @s block:block_light_orange
+give @s block:block_light_yellow
+give @s block:block_light_lime
+give @s block:block_light_green
+give @s block:block_light_cyan
+give @s block:block_light_light_blue
+give @s block:block_light_blue
+give @s block:block_light_purple
+give @s block:block_light_magenta
+give @s block:block_light_pink
+gamerule sendcommandfeedback true

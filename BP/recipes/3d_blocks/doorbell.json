@@ -1,0 +1,27 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "block:doorbell"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "I",
+      "B",
+      "I"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "B": {
+        "item": "minecraft:stone_button"
+      }
+    },
+    "result": {
+      "item": "block:doorbell"
+    }
+  }
+}

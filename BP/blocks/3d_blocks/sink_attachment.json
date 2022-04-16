@@ -1,0 +1,90 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:sink_attachment",
+            "properties": {
+                "block:placement_state": [ 2, 3, 4, 5 ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "items"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "furniture_white_color",
+                    "render_method": "opaque"
+                },
+                "faucet": {
+                    "texture": "countertop_faucet_color",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:pick_collision": {
+                "origin": [ -8, 0, -8 ],
+                "size": [ 16, 3, 16 ]
+            },
+            "minecraft:entity_collision": {
+                "origin":  [-8, 0, -8],
+                "size":    [16, 2, 16]
+            },
+            "minecraft:loot": "loot_tables/blocks/sink_attachment.json",
+            "minecraft:geometry": "geometry.sink_attachment",
+            "minecraft:destroy_time": 4,
+            "minecraft:immovable": true,
+            "minecraft:on_player_placing": {
+                "event": "block:placement_state"
+            },
+            "minecraft:map_color": "#FFFFFF",
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                       "block_filter": [ "block:sink_attachment" ],
+                       "allowed_faces": [ "up" ]
+                    }
+                ]
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_absorption": 0
+        },
+        "events": {
+            "block:placement_state": {
+                "set_block_property": {
+                    "block:placement_state": "(query.cardinal_facing_2d)"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('block:placement_state') == 2",
+                "components": {
+                    "minecraft:rotation": [ 0, 0, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 3",
+                "components": {
+                    "minecraft:rotation": [ 0, 180, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 4",
+                "components": {
+                    "minecraft:rotation": [ 0, 90, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 5",
+                "components": {
+                    "minecraft:rotation": [ 0, 270, 0 ]
+                }
+            }
+        ]
+    }
+}

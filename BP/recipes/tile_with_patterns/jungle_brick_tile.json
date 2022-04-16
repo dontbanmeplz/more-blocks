@@ -1,0 +1,21 @@
+{
+"format_version": "1.12",
+"minecraft:recipe_shapeless": {
+"description": {
+	"identifier": "block:jungle_brick_tile"
+	},
+"tags": [ "crafting_table" ],
+"ingredients": [
+	   {
+			"item": "block:wood_tile_jungle"
+		},
+		{
+			"item": "item:brick_pattern"
+      }
+    ],
+
+"result": {
+		 "item": "block:jungle_brick_tile"
+		 }
+	}
+}

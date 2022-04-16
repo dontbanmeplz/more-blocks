@@ -1,0 +1,10 @@
+﻿gamerule sendcommandfeedback false
+give @s block:table_oak
+give @s block:table_spruce
+give @s block:table_birch
+give @s block:table_jungle
+give @s block:table_acacia
+give @s block:table_dark_oak
+give @s block:table_crimson
+give @s block:table_warped
+gamerule sendcommandfeedback true

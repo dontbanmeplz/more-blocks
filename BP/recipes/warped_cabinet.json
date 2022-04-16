@@ -1,0 +1,32 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:warped_cabinet"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "AAA",
+        "BBB",
+        "CCC"
+      ],
+      "key": {
+        "A": {
+          "item": "minecraft:warped_stem"
+        },
+        "B": {
+          "item": "minecraft:warped_door"
+        },
+        "C": {
+           "item": "minecraft:warped_planks"
+         }
+      },
+      "result": {
+        "item": "block:warped_cabinet",
+        "count": 3
+      }
+    }
+  }
+  

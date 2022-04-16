@@ -1,0 +1,31 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:gate_light"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "GGG",
+        "GLG",
+        "XXX"
+      ],
+      "key": {
+        "X": {
+          "item": "minecraft:iron_ingot"
+        },
+        "L": {
+          "item": "item:led_light"
+        },
+        "G": {
+           "item": "minecraft:glass_pane"
+         }
+      },
+      "result": {
+        "item": "block:gate_light"
+      }
+    }
+  }
+  

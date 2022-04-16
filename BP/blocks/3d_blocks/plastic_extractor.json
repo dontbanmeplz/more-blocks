@@ -1,0 +1,252 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:plastic_extractor",
+            "properties": {
+                "block:placement_state": [ 2, 3, 4, 5 ],
+                "block:plastic_capacity": [ 0, 1, 2, 3, 4, 5, 6 ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "items"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "plastic_extractor_glass",
+                    "render_method": "alpha_test"
+                },
+                "glass": {
+                    "texture": "plastic_extractor_glass",
+                    "render_method": "alpha_test"
+                },
+                "base": {
+                    "texture": "furniture_default_color",
+                    "render_method": "alpha_test"
+                },
+                "tube": {
+                    "texture": "furniture_white_color",
+                    "render_method": "alpha_test"
+                },
+                "plastic": {
+                    "texture": "plastic_color",
+                    "render_method": "alpha_test"
+                },
+                "transparent": {
+                    "texture": "transparent",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:pick_collision": {
+                "origin": [ -7, 0, -7 ],
+                "size": [ 14, 16, 15 ]
+            },
+            "minecraft:entity_collision": {
+                "origin": [ -7, 0, -7 ],
+                "size": [ 14, 16, 15 ]
+            },
+            "minecraft:loot": "loot_tables/blocks/plastic_extractor.json",
+            "minecraft:geometry": "geometry.plastic_extractor.empty",
+            "minecraft:destroy_time": 4,
+            "minecraft:on_player_placing": {
+                "event": "placement_state"
+            },
+            "minecraft:on_interact": {
+                "event": "get_liquid_plastic"
+            },
+            "minecraft:ticking": {
+                "looping": true,
+                "range": [ 20, 20 ],
+                "on_tick": {
+                    "event": "fill_plastic"
+                  }
+             },
+            "minecraft:flammable": {
+                "flame_odds": 30,
+                "burn_odds": 30
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                       "block_filter": [
+                            "minecraft:grass",
+                            "minecraft:grass_path",
+                            "minecraft:podzol",
+                            "minecraft:mycelium",
+                            "minecraft:dirt",
+                            "minecraft:stone",
+                            "minecraft:gravel",
+                            "minecraft:sand"
+                       ],
+                       "allowed_faces": [ "up" ]
+                    }
+                ]
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_absorption": 0
+        },
+        "events": {
+            "placement_state": {
+                "set_block_property": {
+                    "block:placement_state": "(query.cardinal_facing_2d)"
+                }
+            },
+            "fill_plastic": {
+                "sequence": [
+                    {
+                        "condition": "query.block_property('block:plastic_capacity') == 0",
+                        "set_block_property": {
+                            "block:plastic_capacity": 1
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('block:plastic_capacity') == 1",
+                        "set_block_property": {
+                            "block:plastic_capacity": 2
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('block:plastic_capacity') == 2",
+                        "set_block_property": {
+                            "block:plastic_capacity": 3
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('block:plastic_capacity') == 3",
+                        "set_block_property": {
+                            "block:plastic_capacity": 4
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('block:plastic_capacity') == 4",
+                        "set_block_property": {
+                            "block:plastic_capacity": 5
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('block:plastic_capacity') == 5",
+                        "set_block_property": {
+                            "block:plastic_capacity": 6
+                        }
+                    }
+                ]
+            },
+            "get_liquid_plastic": {
+                "sequence": [
+                    {
+                        "condition": "query.block_property('block:plastic_capacity') == 6",
+                        "set_block_property": {
+                            "block:plastic_capacity": 5
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('block:plastic_capacity') == 5",
+                        "set_block_property": {
+                            "block:plastic_capacity": 4
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('block:plastic_capacity') == 4",
+                        "set_block_property": {
+                            "block:plastic_capacity": 3
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('block:plastic_capacity') == 3",
+                        "set_block_property": {
+                            "block:plastic_capacity": 2
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('block:plastic_capacity') == 2",
+                        "set_block_property": {
+                            "block:plastic_capacity": 1
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('block:plastic_capacity') == 1",
+                        "set_block_property": {
+                            "block:plastic_capacity": 0
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('block:plastic_capacity') != 0",
+                        "spawn_loot": {
+                            "table": "loot_tables/blocks/liquid_plastic.json"
+                        }
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('block:placement_state') == 2",
+                "components": {
+                    "minecraft:rotation": [ 0, 0, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 3",
+                "components": {
+                    "minecraft:rotation": [ 0, 180, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 4",
+                "components": {
+                    "minecraft:rotation": [ 0, 90, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 5",
+                "components": {
+                    "minecraft:rotation": [ 0, 270, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:plastic_capacity') == 0",
+                "components": {
+                    "minecraft:geometry": "geometry.plastic_extractor.empty"
+                 }
+            },
+            {
+                "condition": "query.block_property('block:plastic_capacity') == 1",
+                "components": {
+                    "minecraft:geometry": "geometry.plastic_extractor.level1"
+                 }
+            },
+            {
+                "condition": "query.block_property('block:plastic_capacity') == 2",
+                "components": {
+                    "minecraft:geometry": "geometry.plastic_extractor.level2"
+                 }
+            },
+            {
+                "condition": "query.block_property('block:plastic_capacity') == 3",
+                "components": {
+                    "minecraft:geometry": "geometry.plastic_extractor.level3"
+                 }
+            },
+            {
+                "condition": "query.block_property('block:plastic_capacity') == 4",
+                "components": {
+                    "minecraft:geometry": "geometry.plastic_extractor.level4"
+                 }
+            },
+            {
+                "condition": "query.block_property('block:plastic_capacity') == 5",
+                "components": {
+                    "minecraft:geometry": "geometry.plastic_extractor.level5"
+                 }
+            },
+            {
+                "condition": "query.block_property('block:plastic_capacity') == 6",
+                "components": {
+                    "minecraft:geometry": "geometry.plastic_extractor.level6"
+                 }
+            }
+        ]
+    }
+}

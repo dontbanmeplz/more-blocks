@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "block:plastic_brick_orange"
+    },
+
+    "tags": [ "stonecutter" ],
+    "priority": 1,
+    "ingredients": [
+      {
+        "item": "block:plastic_orange",
+        "data": 0
+      }
+    ],
+    "result": {
+      "item": "block:plastic_brick_orange"
+    }
+  }
+}

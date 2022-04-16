@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+     "description": {
+       "identifier": "block:marble_herringbone_tile_lime",
+       "is_experimental": false,
+       "register_to_creative_menu": false
+     },
+     "components": {
+          "tag:stone": {},
+          "minecraft:destroy_time": 4,
+          "minecraft:map_color": "#74BA18",
+          "minecraft:explosion_resistance": 8.5,
+          "minecraft:flammable": {
+          "flame_odds": 0,
+          "burn_odds": 0
+      }
+    }
+  }
+}

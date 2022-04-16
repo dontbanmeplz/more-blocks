@@ -1,0 +1,27 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:plastic_desk_magenta"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "plastic_desk"
+            },
+            "tag:plastic": {},
+            "minecraft:unit_cube": {},
+            "minecraft:pick_collision": true,
+            "minecraft:entity_collision": true,
+            "minecraft:map_color": "#A6309C",
+            "minecraft:explosion_resistance": 7.5,
+            "minecraft:destroy_time": 2,
+            "minecraft:block_light_emission": 0,
+            "minecraft:block_light_absorption": 15,
+            "minecraft:flammable": {
+                "flame_odds": 30,
+                "burn_odds": 30
+            }
+        }
+    }
+}

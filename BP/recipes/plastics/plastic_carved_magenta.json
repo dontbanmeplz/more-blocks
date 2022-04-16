@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "block:plastic_carved_magenta"
+    },
+
+    "tags": [ "stonecutter" ],
+    "priority": 0,
+    "ingredients": [
+      {
+        "item": "block:plastic_magenta",
+        "data": 0
+      }
+    ],
+    "result": {
+      "item": "block:plastic_carved_magenta"
+    }
+  }
+}

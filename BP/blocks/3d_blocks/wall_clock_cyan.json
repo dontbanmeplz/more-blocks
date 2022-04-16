@@ -1,0 +1,97 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:wall_clock_cyan",
+            "properties": {
+                "facing:direction": [ 1, 2, 3, 4, 5, 6 ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "wall_clock"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "smooth_plastic_cyan",
+                    "render_method": "opaque"
+                },
+                "body": {
+                    "texture": "smooth_plastic_white",
+                    "render_method": "opaque"
+                },
+                "frame": {
+                    "texture": "smooth_plastic_cyan",
+                    "render_method": "opaque"
+                },
+                "hand": {
+                    "texture": "smooth_plastic_black",
+                    "render_method": "opaque"
+                }
+            },
+            "tag:plastic": {},
+            "minecraft:pick_collision": {
+                "origin": [ -8, 0, -8 ],
+                "size": [ 16, 16, 3 ]
+            },
+            "minecraft:entity_collision": {
+                "origin": [ -8, 0, -8 ],
+                "size": [ 16, 16, 3 ]
+            },
+            "minecraft:loot": "loot_tables/blocks/wall_clock_cyan.json",
+            "minecraft:geometry": "geometry.wall_clock",
+            "minecraft:destroy_time": 2,
+            "minecraft:breakonpush": true,
+            "minecraft:on_player_placing": {
+                "event": "placement_state"
+            },
+            "minecraft:flammable": {
+                "flame_odds": 15,
+                "burn_odds": 15
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                       "allowed_faces": [ "north", "east", "south", "west" ]
+                    }
+                ]
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_absorption": 0
+        },
+        "events": {
+            "placement_state": {
+                "set_block_property": {
+                    "facing:direction": "(query.cardinal_facing_2d)"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('facing:direction') == 2",
+                "components": {
+                    "minecraft:rotation": [ 0, 0, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('facing:direction') == 3",
+                "components": {
+                    "minecraft:rotation": [ 0, 180, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('facing:direction') == 4",
+                "components": {
+                    "minecraft:rotation": [ 0, 90, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('facing:direction') == 5",
+                "components": {
+                    "minecraft:rotation": [ 0, 270, 0 ]
+                }
+            }
+        ]
+    }
+}

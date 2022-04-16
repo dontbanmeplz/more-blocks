@@ -1,0 +1,22 @@
+{
+"format_version": "1.12",
+"minecraft:recipe_shapeless": {
+"description": {
+	"identifier": "item:palazzo_pattern"
+	},
+"tags": [ "crafting_table" ],
+"ingredients": [
+	   {
+			"item": "minecraft:frame"
+		},
+		{
+			"item": "minecraft:stonebrick",
+      "data": 3
+      }
+    ],
+
+"result": {
+		 "item": "item:palazzo_pattern"
+		 }
+	}
+}

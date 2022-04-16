@@ -1,0 +1,10 @@
+﻿gamerule sendcommandfeedback false
+give @s block:chair_oak
+give @s block:chair_spruce
+give @s block:chair_birch
+give @s block:chair_jungle
+give @s block:chair_acacia
+give @s block:chair_dark_oak
+give @s block:chair_crimson
+give @s block:chair_warped
+gamerule sendcommandfeedback true

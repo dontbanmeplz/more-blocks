@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:checkered_tile_pink"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "block:plastic_pink"
+        }
+      },
+      "result": {
+        "item": "block:checkered_tile_pink",
+        "count": 3
+      }
+    }
+  }
+  

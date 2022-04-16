@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:acacia_crate"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "crate"
+            },
+            "tag:wood": {},
+            "minecraft:unit_cube": {},
+            "minecraft:map_color": "#B45A2F",
+            "minecraft:explosion_resistance": 7.5,
+            "minecraft:destroy_time": 2,
+            "minecraft:block_light_emission": 0,
+            "minecraft:block_light_filter": 15,
+            "minecraft:flammable": {
+                "flame_odds": 30,
+                "burn_odds": 30
+            }
+        }
+    }
+}

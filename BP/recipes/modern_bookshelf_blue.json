@@ -1,0 +1,32 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:modern_bookshelf_blue"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "AAA",
+        "BBB",
+        "CCC"
+      ],
+      "key": {
+        "A": {
+          "item": "block:plastic_blue"
+        },
+        "B": {
+          "item": "minecraft:book"
+        },
+        "C": {
+          "item": "block:plastic_white"
+        }
+      },
+      "result": {
+        "item": "block:modern_bookshelf_blue",
+        "count": 3
+      }
+    }
+  }
+  

@@ -1,0 +1,45 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:gate_light"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "light"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "light_bulb_default_color",
+                    "render_method": "opaque"
+                },
+                "metal": {
+                    "texture": "furniture_black_color",
+                    "render_method": "opaque"
+                },
+                "base": {
+                    "texture": "smooth_plastic_gray",
+                    "render_method": "opaque"
+                },
+                "bulb": {
+                    "texture": "light_bulb_default_color",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:pick_collision": {
+                "origin":  [-8, 0, -8],
+                "size":    [16, 16, 16]
+            },
+            "minecraft:entity_collision": {
+                "origin":  [-8, 0, -8],
+                "size":    [16, 16, 16]
+            },
+            "minecraft:map_color": "#EBEBEB",
+            "minecraft:explosion_resistance": 7.5,
+            "minecraft:geometry": "geometry.gate_light",
+            "minecraft:destroy_time": 2,
+            "minecraft:block_light_emission": 1.0
+        }
+    }
+}

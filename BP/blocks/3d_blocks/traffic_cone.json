@@ -1,0 +1,47 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:traffic_cone"
+
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "commands"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "smooth_plastic_orange",
+                    "render_method": "opaque"
+                },
+                "orange": {
+                    "texture": "smooth_plastic_orange",
+                    "render_method": "opaque"
+                },
+                "white": {
+                    "texture": "smooth_plastic_white",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:pick_collision": {
+                "origin":  [-7, 0, -7],
+                "size":    [14, 16, 14]
+            },
+            "minecraft:entity_collision": {
+                "origin":  [-7, 0, -7],
+                "size":    [14, 16, 14]
+            },
+            "minecraft:map_color": "#E36402",
+            "minecraft:explosion_resistance": 4.0,
+            "minecraft:loot": "loot_tables/blocks/traffic_cone.json",
+            "minecraft:geometry": "geometry.traffic_cone",
+            "minecraft:destroy_time": 2,
+            "minecraft:block_light_emission": 0,
+            "minecraft:block_light_absorption": 0,
+            "minecraft:flammable": {
+                "flame_odds": 15,
+                "burn_odds": 15
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:countertop_cabinet"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "AAA",
+        "BBB",
+        "CCC"
+      ],
+      "key": {
+        "A": {
+          "item": "minecraft:clay",
+          "data": 0
+        },
+        "B": {
+          "item": "minecraft:iron_door",
+          "data": 0
+        },
+        "C": {
+          "item": "minecraft:concrete",
+          "data": 0
+        }
+      },
+      "result": {
+        "item": "block:countertop_cabinet",
+        "count": 3
+      }
+    }
+  }
+  

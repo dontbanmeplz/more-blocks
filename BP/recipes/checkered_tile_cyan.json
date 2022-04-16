@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:checkered_tile_cyan"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "block:plastic_cyan"
+        }
+      },
+      "result": {
+        "item": "block:checkered_tile_cyan",
+        "count": 3
+      }
+    }
+  }
+  

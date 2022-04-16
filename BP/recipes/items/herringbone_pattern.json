@@ -1,0 +1,21 @@
+{
+"format_version": "1.12",
+"minecraft:recipe_shapeless": {
+"description": {
+	"identifier": "item:herringbone_pattern"
+	},
+"tags": [ "crafting_table" ],
+"ingredients": [
+	   {
+			"item": "minecraft:frame"
+		},
+		{
+			"item": "minecraft:brick"
+      }
+    ],
+
+"result": {
+		 "item": "item:herringbone_pattern"
+		 }
+	}
+}

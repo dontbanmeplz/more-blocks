@@ -1,0 +1,195 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:countertop_sink",
+            "properties": {
+                "facing:direction": [ 2, 3, 4, 5, 6 ],
+                "block:geometry": [ "default", "countertop", "faucet" ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "countertop_sink"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "white_cement",
+                    "render_method": "opaque"
+                },
+                "base": {
+                    "texture": "countertop_base_color",
+                    "render_method": "opaque"
+                },
+                "top": {
+                    "texture": "countertop_top_color",
+                    "render_method": "opaque"
+                },
+                "faucet": {
+                    "texture": "countertop_faucet_color",
+                    "render_method": "opaque"
+                },
+                "sink_side": {
+                    "texture": "countertop_sink_color",
+                    "render_method": "opaque"
+                },
+                "sink": {
+                    "texture": "countertop_sink",
+                    "render_method": "opaque"
+                }
+            },
+            "tag:stone": {},
+            "minecraft:aim_collision": {
+                "origin": [ -8, 0, -8 ],
+                "size": [ 16, 16, 15 ]
+            },
+            "minecraft:block_collision": {
+                "origin": [ -8, 0, -8 ],
+                "size": [ 16, 16, 15 ]
+            },
+            "minecraft:loot": "loot_tables/blocks/countertop_sink.json",
+            "minecraft:geometry": "geometry.countertop.sink",
+            "minecraft:destroy_time": 7,
+            "minecraft:explosion_resistance": 10,
+            "minecraft:immovable": true,
+            "minecraft:on_player_placing": {
+                "event": "facing_direction"
+            },
+            "minecraft:map_color": "#575C5C",
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_filter": 0,
+            "minecraft:ticking": {
+                "looping": true,
+                "range": [ 0, 0 ],
+                "on_tick": {
+                    "event": "set_states",
+                    "target": "self"
+                }
+            }
+        },
+        "events": {
+            "facing_direction": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "facing:direction": "(query.cardinal_facing_2d)",
+                            "block:geometry": "'countertop'"
+                        }
+                    },
+                    {
+                        "set_block_at_pos": {
+                            "block_type": "block:countertop_sink",
+                            "block_offset": [ 0, 1, 0 ]
+                        }
+                    }
+                ]
+            },
+            "set_states": {
+                "sequence": [
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,-1,0,'countertopN','countertop:sinkB')",
+                        "set_block_property": {
+                            "block:geometry": "'faucet'",
+                            "facing:direction": 2
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,-1,0,'countertopS','countertop:sinkB')",
+                        "set_block_property": {
+                            "block:geometry": "'faucet'",
+                            "facing:direction": 3
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,-1,0,'countertopW','countertop:sinkB')",
+                        "set_block_property": {
+                            "block:geometry": "'faucet'",
+                            "facing:direction": 4
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,-1,0,'countertopE','countertop:sinkB')",
+                        "set_block_property": {
+                            "block:geometry": "'faucet'",
+                            "facing:direction": 5
+                        }
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('facing:direction') == 2",
+                "components": {
+                    "tag:countertopN": {},
+                    "minecraft:rotation": [ 0, 0, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('facing:direction') == 3",
+                "components": {
+                    "tag:countertopS": {},
+                    "minecraft:rotation": [ 0, 180, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('facing:direction') == 4",
+                "components": {
+                    "tag:countertopW": {},
+                    "minecraft:rotation": [ 0, 90, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('facing:direction') == 5",
+                "components": {
+                    "tag:countertopE": {},
+                    "minecraft:rotation": [ 0, 270, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:geometry') == 'countertop'",
+                "components": {
+                    "tag:countertop:sinkB": {},
+                    "minecraft:geometry": "geometry.countertop.sink",
+                    "minecraft:placement_filter": {
+                        "conditions": [
+                            {
+                                "block_filter": [ "block:countertop_sink" ],
+                                "allowed_faces": [ "down" ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('block:geometry') == 'faucet'",
+                "components": {
+                    "tag:countertop:sinkT": {},
+                    "minecraft:geometry": "geometry.countertop.faucet",
+                    "minecraft:loot": "loot_tables/empty.json",
+                    "minecraft:aim_collision": {
+                        "origin": [ -1, 0, -7 ],
+                        "size": [ 2, 8, 5 ]
+                    },
+                    "minecraft:block_collision": {
+                        "origin": [ -1, 0, -7 ],
+                        "size": [ 2, 8, 5 ]
+                    },
+                    "minecraft:placement_filter": {
+                        "conditions": [
+                            {
+                                "block_filter": [ "block:countertop_sink" ],
+                                "allowed_faces": [ "up" ]
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

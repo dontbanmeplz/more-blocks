@@ -1,0 +1,317 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:door_plastic",
+            "properties": {
+                "door:direction": [ 2, 3, 4, 5 ],
+                "door:toggle": [true, false],
+                "door:part": [ "default", "lower", "upper" ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.name.door"
+            },
+            "tag:plastic": {},
+            "minecraft:pick_collision": {
+                "origin": [-8, 0, -8],
+                "size": [16, 16, 3]
+            },
+            "minecraft:entity_collision": {
+                "origin": [-8, 0, -8],
+                "size": [16, 16, 3]
+            },
+            "minecraft:loot": "loot_tables/blocks/door_plastic.json",
+            "minecraft:destroy_time": 4,
+            "minecraft:breakonpush": true,
+            "minecraft:on_player_placing": {
+                "event": "facing_direction"
+            },
+            "minecraft:flammable": {
+                "flame_odds": 30,
+                "burn_odds": 30
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_absorption": 0.2,
+            "minecraft:ticking": {
+                "looping": true,
+                "range": [ 0.1, 0.1 ],
+                "on_tick": {
+                    "event": "set_door_states",
+                    "target": "self"
+                }
+            }
+        },
+        "events": {
+            "facing_direction": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "door:direction": "(query.cardinal_facing_2d)",
+                            "door:part": "'lower'"
+                        }
+                    },
+                    {
+                        "set_block_at_pos": {
+                            "block_type": "block:door_plastic",
+                            "block_offset": [ 0, 1, 0 ]
+                        }
+                    }
+                ]
+            },
+            "set_door_states": {
+                "sequence": [
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,-1,0,'doorS','doorL')",
+                        "set_block_property": {
+                            "door:part": "'upper'",
+                            "door:direction": 2
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,-1,0,'doorN','doorL')",
+                        "set_block_property": {
+                            "door:part": "'upper'",
+                            "door:direction": 3
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,-1,0,'doorE','doorL')",
+                        "set_block_property": {
+                            "door:part": "'upper'",
+                            "door:direction": 4
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,-1,0,'doorW','doorL')",
+                        "set_block_property": {
+                            "door:part": "'upper'",
+                            "door:direction": 5
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,1,0,'doorS','doorU')",
+                        "set_block_property": {
+                            "door:part": "'lower'",
+                            "door:direction": 2
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,1,0,'doorN','doorU')",
+                        "set_block_property": {
+                            "door:part": "'lower'",
+                            "door:direction": 3
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,1,0,'doorE','doorU')",
+                        "set_block_property": {
+                            "door:part": "'lower'",
+                            "door:direction": 4
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,1,0,'doorW','doorU')",
+                        "set_block_property": {
+                            "door:part": "'lower'",
+                            "door:direction": 5
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,-1,0,'doorO') || q.block_neighbor_has_all_tags(0,1,0,'doorO')",
+                        "set_block_property": {
+                            "door:toggle": false
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,-1,0,'doorC') || q.block_neighbor_has_all_tags(0,1,0,'doorC')",
+                        "set_block_property": {
+                            "door:toggle": true
+                        }
+                    }
+                ]
+            },
+            "door_open": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "door:toggle": "query.block_property('door:toggle') ? false : true"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": [ "playsound random.door_open @a[r=5] ~ ~ ~ 0.4 1.0" ]
+                        }
+                    }
+                ]
+            },
+            "door_close": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "door:toggle": "query.block_property('door:toggle') ? false : true"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": [ "playsound random.door_close @a[r=5] ~ ~ ~ 0.4 1.0" ]
+                        }
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('door:direction') == 2",
+                "components": {
+                    "tag:doorS": {},
+                    "minecraft:pick_collision": {
+                        "origin": [-8, 0, 5],
+                        "size": [16, 16, 3]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [-8, 0, 5],
+                        "size": [16, 16, 3]
+                    },
+                    "minecraft:geometry":"geometry.door.south"
+                }
+            },
+            {
+                "condition":"query.block_property('door:direction') == 3",
+                "components": {
+                    "tag:doorN": {},
+                    "minecraft:pick_collision": {
+                        "origin": [-8, 0, -8],
+                        "size": [16, 16, 3]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [-8, 0, -8],
+                        "size": [16, 16, 3]
+                    },
+                    "minecraft:geometry":"geometry.door.north"
+                }
+            },
+            {
+                "condition":"query.block_property('door:direction') == 4",
+                "components": {
+                    "tag:doorE": {},
+                    "minecraft:pick_collision": {
+                        "origin": [-8, 0, -8],
+                        "size": [3, 16, 16]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [-8, 0, -8],
+                        "size": [3, 16, 16]
+                    },
+                    "minecraft:geometry": "geometry.door.east"
+                }
+            },
+            {
+                "condition":"query.block_property('door:direction') == 5",
+                "components": {
+                    "tag:doorW": {},
+                    "minecraft:pick_collision": {
+                        "origin": [5, 0, -8],
+                        "size": [3, 16, 16]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [5, 0, -8],
+                        "size": [3, 16, 16]
+                    },
+                    "minecraft:geometry":"geometry.door.west"
+                }
+            },
+            {
+                "condition": "query.block_property('door:toggle') == false",
+                "components": {
+                    "tag:doorO": {},
+                    "minecraft:rotation": [0, -90, 0],
+                    "minecraft:on_interact": {
+                        "event": "door_close"
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('door:toggle') == true",
+                "components": {
+                    "tag:doorC": {},
+                    "minecraft:rotation": [0, 0, 0],
+                    "minecraft:on_interact": {
+                        "event": "door_open"
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('door:part') == 'default'",
+                "components": {
+                    "minecraft:geometry": "geometry.door.placeholder",
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "smooth_plastic_white",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('door:part') == 'lower'",
+                "components": {
+                    "tag:doorL": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "plastic_white",
+                            "render_method": "opaque"
+                        },
+                        "front": {
+                            "texture": "door_plastic_lower",
+                            "render_method": "opaque"
+                        },
+                        "back": {
+                            "texture": "door_plastic_lower_back",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:placement_filter": {
+                        "conditions": [
+                            {
+                                "block_filter": [ "block:door_plastic" ],
+                                "allowed_faces": [ "down" ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('door:part') == 'upper'",
+                "components": {
+                    "minecraft:loot": "loot_tables/empty.json",
+                    "tag:doorU": {},
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "plastic_white",
+                            "render_method": "opaque"
+                        },
+                        "front": {
+                            "texture": "door_plastic_upper",
+                            "render_method": "opaque"
+                        },
+                        "back": {
+                            "texture": "door_plastic_upper_back",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:placement_filter": {
+                        "conditions": [
+                            {
+                                "block_filter": [ "block:door_plastic" ],
+                                "allowed_faces": [ "up" ]
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

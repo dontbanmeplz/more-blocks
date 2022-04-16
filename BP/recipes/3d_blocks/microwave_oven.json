@@ -1,0 +1,29 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:microwave_oven"
+      },
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "###",
+        "RXR",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        },
+        "X": {
+          "item": "minecraft:furnace"
+        }
+      },
+      "result": {
+        "item": "block:microwave_oven"
+      }
+    }
+  }
+  

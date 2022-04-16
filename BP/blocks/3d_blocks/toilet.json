@@ -1,0 +1,111 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:toilet",
+            "properties": {
+                "block:placement_state": [ 2, 3, 4, 5 ],
+                "block:is_open": [ true, false ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "construction"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "furniture_white_color",
+                    "render_method": "opaque"
+                },
+                "gray": {
+                    "texture": "furniture_default_color",
+                    "render_method": "opaque"
+                },
+                "water": {
+                    "texture": "water_texture",
+                    "render_method": "opaque"
+                }
+            },
+            "tag:stone": {},
+            "minecraft:pick_collision": {
+                "origin": [ -6, 0, -8 ],
+                "size": [ 12, 16, 15 ]
+            },
+            "minecraft:entity_collision": {
+                "origin": [ -6, 0, -8 ],
+                "size": [ 12, 16, 15 ]
+            },
+            "minecraft:loot": "loot_tables/blocks/toilet.json",
+            "minecraft:geometry": "geometry.toilet_open",
+            "minecraft:destroy_time": 4,
+            "minecraft:on_player_placing": {
+                "event": "placement_state"
+            },
+            "minecraft:on_interact": {
+                "event": "toggle_toilet"
+            },
+            "minecraft:map_color": "#FFFFFF",
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_absorption": 0
+        },
+        "events": {
+            "placement_state": {
+                "set_block_property": {
+                    "block:placement_state": "(query.cardinal_facing_2d)"
+                }
+            },
+            "toggle_toilet": {
+                "set_block_property": {
+                    "block:is_open": "query.block_property('block:is_open') ? false : true"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('block:placement_state') == 2",
+                "components": {
+                    "minecraft:rotation": [ 0, 0, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 3",
+                "components": {
+                    "minecraft:rotation": [ 0, 180, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 4",
+                "components": {
+                    "minecraft:rotation": [ 0, 90, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 5",
+                "components": {
+                    "minecraft:rotation": [ 0, 270, 0 ]
+                }
+            },
+            {
+                "condition": "!query.block_property('block:is_open')",
+                "components": {
+                    "minecraft:geometry": "geometry.toilet_close",
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "furniture_white_color",
+                            "render_method": "opaque"
+					    },
+					    "gray": {
+                            "texture": "furniture_default_color",
+                            "render_method": "opaque"
+					    }
+				    }
+				}
+            }
+        ]
+    }
+}

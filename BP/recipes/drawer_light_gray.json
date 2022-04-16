@@ -1,0 +1,32 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:drawer_light_gray"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "AAA",
+        "BBB",
+        "CCC"
+      ],
+      "key": {
+        "A": {
+          "item": "block:plastic_light_gray"
+        },
+        "B": {
+          "item": "block:trapdoor_plastic"
+        },
+        "C": {
+          "item": "block:plastic_white"
+        }
+      },
+      "result": {
+        "item": "block:drawer_light_gray",
+        "count": 3
+      }
+    }
+  }
+  

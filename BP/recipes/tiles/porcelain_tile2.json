@@ -1,0 +1,32 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:porcelain_tile2"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "###",
+        "#XC",
+        "CCC"
+      ],
+      "key": {
+        "X": {
+          "item": "minecraft:bucket",
+          "data": 8
+        },
+        "#": {
+          "item": "minecraft:quartz"
+        },
+        "C": {
+          "item": "minecraft:clay"
+         }
+      },
+      "result": [
+      { "item": "block:porcelain_tile", "count": 4 },
+      { "item": "minecraft:bucket", "data": 0 }
+    ]
+  }
+}

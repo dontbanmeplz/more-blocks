@@ -1,0 +1,10 @@
+﻿gamerule sendcommandfeedback false
+give @s block:oak_drawer
+give @s block:spruce_drawer
+give @s block:birch_drawer
+give @s block:jungle_drawer
+give @s block:acacia_drawer
+give @s block:dark_oak_drawer
+give @s block:crimson_drawer
+give @s block:warped_drawer
+gamerule sendcommandfeedback true

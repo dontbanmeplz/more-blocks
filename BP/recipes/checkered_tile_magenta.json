@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:checkered_tile_magenta"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "block:plastic_magenta"
+        }
+      },
+      "result": {
+        "item": "block:checkered_tile_magenta",
+        "count": 3
+      }
+    }
+  }
+  

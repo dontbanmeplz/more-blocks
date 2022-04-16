@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "block:screen_block"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "##",
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "block:steel_rod"
+      }
+    },
+    "result": {
+        "item": "block:screen_block"
+    }
+  }
+}

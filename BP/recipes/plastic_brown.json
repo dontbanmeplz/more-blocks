@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "block:plastic_brown"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "item:liquid_plastic"
+      },
+      "X": {
+        "item": "minecraft:dye",
+        "data": 17
+      }
+    },
+    "result": {
+        "item": "block:plastic_brown"
+    }
+  }
+}

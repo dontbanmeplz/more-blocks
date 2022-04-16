@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "block:table_spruce"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "###",
+      "X X"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:wooden_slab",
+        "data": 1
+      },
+      "X": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "block:table_spruce"
+    }
+  }
+}

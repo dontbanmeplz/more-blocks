@@ -1,0 +1,32 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:drawer_red"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "AAA",
+        "BBB",
+        "CCC"
+      ],
+      "key": {
+        "A": {
+          "item": "block:plastic_red"
+        },
+        "B": {
+          "item": "block:trapdoor_plastic"
+        },
+        "C": {
+          "item": "block:plastic_white"
+        }
+      },
+      "result": {
+        "item": "block:drawer_red",
+        "count": 3
+      }
+    }
+  }
+  

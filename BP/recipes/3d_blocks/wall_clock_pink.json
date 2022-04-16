@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "block:wall_clock_pink"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " # ",
+      "#X#",
+      " # "
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:redstone"
+      },
+      "#": {
+        "item": "block:plastic_pink"
+      }
+    },
+    "result": {
+      "item": "block:wall_clock_pink"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+"format_version": "1.12",
+"minecraft:recipe_shapeless": {
+"description": {
+	"identifier": "block:crimson_brick_tile"
+	},
+"tags": [ "crafting_table" ],
+"ingredients": [
+	   {
+			"item": "block:wood_tile_crimson"
+		},
+		{
+			"item": "item:brick_pattern"
+      }
+    ],
+
+"result": {
+		 "item": "block:crimson_brick_tile"
+		 }
+	}
+}

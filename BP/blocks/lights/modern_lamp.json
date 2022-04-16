@@ -1,0 +1,112 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:modern_lamp",
+            "properties": {
+                "facing:direction": [ 2, 3, 4, 5 ],
+                "light:toggle": [ false, true ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "light"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "furniture_default_color",
+                    "render_method": "opaque"
+                },
+                "rod": {
+                    "texture": "furniture_gray_color",
+                    "render_method": "opaque"
+                },
+                "light": {
+                    "texture": "light_bulb_default_color",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:pick_collision": {
+                "origin": [ -5, 0, -3 ],
+                "size": [ 10, 15, 7 ]
+            },
+            "minecraft:entity_collision": {
+                "origin": [ -5, 0, -3 ],
+                "size": [ 10, 15, 7 ]
+            },
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/blocks/modern_lamp.json",
+            "minecraft:geometry": "geometry.modern_lamp",
+            "minecraft:destroy_time": 2,
+            "minecraft:breakonpush": true,
+            "minecraft:map_color": "#FFFFFF",
+            "minecraft:on_player_placing": {
+                "event": "placement_state"
+            },
+            "minecraft:on_interact": {
+                "event": "light_toggle"
+            },
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:block_light_emission": 1.0,
+            "minecraft:block_light_absorption": 0
+        },
+        "events": {
+            "placement_state": {
+                "set_block_property": {
+                    "facing:direction": "(query.cardinal_facing_2d)"
+                }
+            },
+            "light_toggle": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "light:toggle": "query.block_property('light:toggle') ? false : true"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": [ "playsound random.click @s[r=5]" ],
+                            "target": "player"
+                        }
+                    }
+                ]
+            }
+         },
+        "permutations": [
+            {
+                "condition": "query.block_property('facing:direction') == 2",
+                "components": {
+                    "minecraft:rotation": [0, 0, 0]
+                }
+            },
+            {
+                "condition":"query.block_property('facing:direction') == 3",
+                "components": {
+                    "minecraft:rotation": [0, 180, 0]
+                }
+            },
+            {
+                "condition":"query.block_property('facing:direction') == 4",
+                "components": {
+                    "minecraft:rotation": [0, 90, 0 ]
+                }
+            },
+            {
+                "condition":"query.block_property('facing:direction') == 5",
+                "components": {
+                    "minecraft:rotation": [0, 270, 0]
+                }
+            },
+            {
+                "condition": "!query.block_property('light:toggle')",
+                "components": {
+                    "minecraft:block_light_emission": 0.0
+                }
+            }
+        ]
+    }
+}

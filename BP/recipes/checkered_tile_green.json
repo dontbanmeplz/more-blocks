@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:checkered_tile_green"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "block:plastic_green"
+        }
+      },
+      "result": {
+        "item": "block:checkered_tile_green",
+        "count": 3
+      }
+    }
+  }
+  

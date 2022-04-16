@@ -1,0 +1,10 @@
+﻿gamerule sendcommandfeedback false
+give @s block:wood_vinyl_oak
+give @s block:wood_vinyl_spruce
+give @s block:wood_vinyl_birch
+give @s block:wood_vinyl_jungle
+give @s block:wood_vinyl_acacia
+give @s block:wood_vinyl_dark_oak
+give @s block:wood_vinyl_crimson
+give @s block:wood_vinyl_warped
+gamerule sendcommandfeedback true

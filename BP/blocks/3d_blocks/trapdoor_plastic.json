@@ -1,0 +1,205 @@
+{
+    "format_version": "1.16.200",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:trapdoor_plastic",
+            "properties": {
+                "door:state": [ "lower", "upper", "lower_open", "upper_open" ],
+                "door:direction": [ 2, 3, 4, 5]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.name.trapdoor"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "trapdoor_plastic",
+                    "render_method": "opaque"
+                }
+            },
+            "tag:plastic": {},
+            "minecraft:loot": "loot_tables/blocks/trapdoor_plastic.json",
+            "minecraft:destroy_time": 2,
+            "minecraft:explosion_resistance": 15,
+            "minecraft:block_light_absorption": 1.0,
+            "minecraft:flammable": {
+                "flame_odds": 30,
+                "burn_odds": 30
+            },
+            "minecraft:on_player_placing": {
+                "event": "placement_state"
+            }
+        },
+        "events": {
+            "lower_open": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "door:state": "'lower_open'"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": ["playsound random.door_open @a[r=5] ~ ~ ~ 0.4 1.0"]
+                        }
+                    }
+                ]
+            },
+            "upper_open": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "door:state": "'upper_open'"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": ["playsound random.door_open @a[r=5] ~ ~ ~ 0.4 1.0"]
+                        }
+                    }
+                ]
+            },
+            "lower": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "door:state": "'lower'"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": ["playsound random.door_close @a[r=5] ~ ~ ~ 0.4 1.0"]
+                        }
+                    }
+                ]
+            },
+            "upper": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "door:state": "'upper'"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": ["playsound random.door_close @a[r=5] ~ ~ ~ 0.4 1.0"]
+                        }
+                    }
+                ]
+            },
+            "placement_state": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "door:direction": "(query.cardinal_facing_2d)"
+                        }
+                    },
+                    {
+                        "condition": "query.target_x_rotation <=0",
+                        "trigger": {
+                            "event": "upper"
+                        }
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition":"query.block_property('door:direction') == 2",
+                "components": {
+                    "minecraft:rotation": [ 0, 0, 0 ]
+                }
+            },
+            {
+                "condition":"query.block_property('door:direction') == 3",
+                "components": {
+                    "minecraft:rotation": [ 0, 180, 0 ]
+                }
+            },
+            {
+                "condition":"query.block_property('door:direction') == 4",
+                "components": {
+                    "minecraft:rotation": [ 0, 90, 0 ]
+                }
+            },
+            {
+                "condition":"query.block_property('door:direction') == 5",
+                "components": {
+                    "minecraft:rotation": [ 0, 270, 0 ]
+                }
+            },
+            {
+                "condition":"query.block_property('door:state') == 'lower'",
+                "components": {
+                    "minecraft:geometry": "geometry.lower_trapdoor",
+                    "minecraft:on_interact": {
+                        "event":"lower_open"
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [ -8, 0, -8 ],
+                        "size": [ 16, 3, 16 ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [ -8, 0, -8 ],
+                        "size": [ 16, 3, 16 ]
+                    }
+                }
+            },
+            {
+                "condition":"query.block_property('door:state') == 'upper'",
+                "components": {
+                    "minecraft:geometry": "geometry.upper_trapdoor",
+                    "minecraft:on_interact": {
+                        "event":"upper_open"
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [ -8, 13, -8 ],
+                        "size": [ 16, 3, 16 ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [ -8, 13, -8 ],
+                        "size": [ 16, 3, 16 ]
+                    }
+                }
+            },
+            {
+                "condition":"query.block_property('door:state') == 'lower_open'",
+                "components": {
+                    "minecraft:geometry": "geometry.open_trapdoor",
+                    "minecraft:block_light_absorption": 0,
+                    "minecraft:on_interact": {
+                        "event":"lower"
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [ -8, 0, -8 ],
+                        "size": [ 16, 16, 3 ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [ -8, 0, -8 ],
+                        "size": [ 16, 16, 3 ]
+                    }
+                }
+            },
+            {
+                "condition":"query.block_property('door:state') == 'upper_open'",
+                "components": {
+                    "minecraft:geometry": "geometry.open_trapdoor",
+                    "minecraft:block_light_absorption": 0,
+                    "minecraft:on_interact": {
+                        "event":"upper"
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [ -8, 0, -8 ],
+                        "size": [ 16, 16, 3 ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [ -8, 0, -8 ],
+                        "size": [ 16, 16, 3 ]
+                    }
+                }
+            }
+        ]
+    }
+}

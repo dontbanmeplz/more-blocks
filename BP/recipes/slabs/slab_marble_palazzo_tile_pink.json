@@ -1,0 +1,24 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:slab_marble_palazzo_tile_pink"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "block:marble_palazzo_tile_pink"
+        }
+      },
+      "result": {
+        "item": "block:slab_marble_palazzo_tile_pink",
+        "count": 6
+      }
+    }
+  }
+  

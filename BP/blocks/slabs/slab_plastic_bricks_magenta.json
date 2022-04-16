@@ -1,0 +1,93 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:slab_plastic_bricks_magenta",
+            "properties": {
+                "block:slab_state": [ "lower", "upper" ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.name.slab"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "plastic_bricks_magenta",
+                    "render_method": "opaque"
+                }
+            },
+            "tag:stone": {},
+            "minecraft:map_color": "#A6309C",
+            "minecraft:explosion_resistance": 15,
+            "minecraft:loot": "loot_tables/blocks/slab_plastic_bricks_magenta.json",
+            "minecraft:destroy_time": 7,
+            "minecraft:block_light_emission": 0,
+            "minecraft:block_light_absorption": 0,
+            "minecraft:on_interact": {
+                "condition": "query.is_item_name_any('slot.weapon.mainhand','block:slab_plastic_bricks_magenta')",
+                "event": "whole"
+            },
+            "minecraft:on_player_placing": {
+                "condition": "query.target_x_rotation <= 0",
+                "event": "upper"
+            }
+        },
+        "events": {
+            "whole": {
+                "sequence": [
+                    {
+                        "set_block_at_pos": {
+                            "block_type": "block:plastic_bricks_magenta",
+                            "block_offset": [ 0, 0, 0 ]
+                        }
+                    },
+                    {
+                        "decrement_stack": {}
+                    }
+                ]
+            },
+            "lower": {
+                "set_block_property": {
+                    "block:slab_state": "'lower'"
+                }
+            },
+            "upper": {
+                "set_block_property": {
+                    "block:slab_state": "'upper'"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition":"q.block_property('block:slab_state') == 'lower'",
+                "components": {
+                    "minecraft:geometry": "geometry.lower_slab",
+                    "minecraft:entity_collision": {
+                        "origin": [ -8, 0, -8 ],
+                        "size": [ 16, 8, 16 ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [ -8, 0, -8 ],
+                        "size": [ 16, 8, 16 ]
+                    }
+                }
+            },
+            {
+                "condition":"q.block_property('block:slab_state') == 'upper'",
+                "components": {
+                    "minecraft:geometry": "geometry.upper_slab",
+                    "minecraft:entity_collision": {
+                        "origin": [ -8, 8, -8 ],
+                        "size": [ 16, 8, 16 ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [ -8, 8, -8 ],
+                        "size": [ 16, 8, 16 ]
+                    }
+                }
+            }
+        ]
+    }
+}

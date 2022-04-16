@@ -1,0 +1,99 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:incandescent_light",
+            "properties": {
+                "light:toggle": [ false, true ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "light"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "incandescent_light",
+                    "render_method": "opaque"
+                },
+                "base": {
+                    "texture": "furniture_default_color",
+                    "render_method": "opaque"
+                },
+                "bulb": {
+                    "texture": "incandescent_light",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:pick_collision": {
+                "origin": [ -4, 6, -4 ],
+                "size": [ 8, 10, 8 ]
+            },
+            "minecraft:entity_collision": {
+                "origin": [ -4, 6, -4 ],
+                "size": [ 8, 10, 8 ]
+            },
+            "minecraft:geometry": "geometry.incandescent_light",
+            "minecraft:loot": "loot_tables/blocks/incandescent_light.json",
+            "minecraft:destroy_time": 2.0,
+			"minecraft:block_light_absorption": 0.0,
+			"minecraft:block_light_emission": 1.0,
+            "minecraft:breakonpush": true,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                       "allowed_faces": [ "down" ]
+                    }
+                ]
+            },
+            "minecraft:on_interact": {
+                "event": "light_toggle"
+            }
+        },
+        "permutations": [
+            {
+                "condition": "!query.block_property('light:toggle')",
+                "components": {
+                    "minecraft:block_light_emission": 0.0,
+			        "minecraft:block_light_absorption": 0.0,
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "light_bulb_default_color",
+                            "render_method": "opaque"
+					    },
+					    "base": {
+                            "texture": "furniture_default_color",
+                            "render_method": "opaque"
+					    },
+					    "bulb": {
+                            "texture": "light_bulb_default_color",
+                            "render_method": "opaque"
+					    }
+				    }
+				}
+            }
+        ],
+        "events": {
+            "light_toggle": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "light:toggle": "query.block_property('light:toggle') ? false : true"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": [ "playsound random.click @s[r=5]" ],
+                            "target": "player"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

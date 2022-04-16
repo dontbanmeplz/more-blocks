@@ -1,0 +1,28 @@
+{
+"format_version": "1.12",
+"minecraft:recipe_shaped": {
+"description": {
+	"identifier": "minecraft:lab_table"
+	},
+"tags": [ "crafting_table" ],
+"pattern": [
+				"###",
+				"PXP",
+				"PPP"],
+	"key": {
+		"P": {
+			"item": "minecraft:planks"
+		},
+		"X": {
+			"item": "minecraft:glass_bottle"
+		},
+		"#": {
+			"item": "minecraft:iron_ingot"
+			}
+		},
+"result": {
+		"item": "minecraft:chemistry_table",
+    "data": 12
+		}
+	}
+}

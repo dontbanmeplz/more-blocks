@@ -1,0 +1,27 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:camouflage_wallpaper_cyan"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "camouflageWallpaper"
+            },
+            "tag:stone": {},
+            "minecraft:unit_cube": {},
+            "minecraft:pick_collision": true,
+            "minecraft:entity_collision": true,
+            "minecraft:map_color": "#008A99",
+            "minecraft:explosion_resistance": 15,
+            "minecraft:destroy_time": 7,
+            "minecraft:block_light_emission": 0,
+            "minecraft:block_light_absorption": 15,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            }
+        }
+    }
+}

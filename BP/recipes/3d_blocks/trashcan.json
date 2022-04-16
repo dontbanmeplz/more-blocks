@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "block:trashcan"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "AAA",
+      "B B",
+      "BBB"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:iron_nugget"
+      },
+      "B": {
+        "item": "iron_ingot"
+      }
+    },
+    "result": {
+        "item": "block:trashcan"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+"format_version": "1.12",
+"minecraft:recipe_shapeless": {
+"description": {
+	"identifier": "block:marble_hopscotch_tile_orange"
+	},
+"tags": [ "crafting_table" ],
+"ingredients": [
+	   {
+			"item": "block:marble_tile_orange"
+		},
+		{
+			"item": "item:hopscotch_pattern"
+      }
+    ],
+
+"result": {
+		 "item": "block:marble_hopscotch_tile_orange"
+		 }
+	}
+}

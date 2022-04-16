@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Added thousands of Modern Blocks in the game. \nBy: Vechrozilator",
+        "name": "Modern Blocks (Resources)",
+        "uuid": "cde03f2c-2b27-41ca-8046-8c7533c1299c",
+        "version": [1, 1, 8],
+        "min_engine_version": [ 1, 16, 0 ]
+    },
+    "modules": [
+        {
+            "description": "Added thousands of Modern Blocks in the game. \nBy: Vechrozilator",
+            "type": "resources",
+            "uuid": "136d007d-9c6e-4f7a-a1a8-e3619211fd94",
+            "version": [1, 1, 8]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "04feb15f-6a52-4ef4-a7dd-aa3bdae1f16c",
+            "version": [1, 1, 8]
+        }
+    ]
+}

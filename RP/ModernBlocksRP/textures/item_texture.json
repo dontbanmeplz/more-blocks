@@ -1,0 +1,108 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "picture_1": {
+      "textures": "textures/items/picture_1"
+    },
+    "picture_2": {
+      "textures": "textures/items/picture_2"
+    },
+    "picture_3": {
+      "textures": "textures/items/picture_3"
+    },
+    "picture_4": {
+      "textures": "textures/items/picture_4"
+    },
+    "picture_5": {
+      "textures": "textures/items/picture_5"
+    },
+    "picture_6": {
+      "textures": "textures/items/picture_6"
+    },
+    "picture_7": {
+      "textures": "textures/items/picture_7"
+    },
+    "picture_8": {
+      "textures": "textures/items/picture_8"
+    },
+    "picture_9": {
+      "textures": "textures/items/picture_9"
+    },
+    "picture_10": {
+      "textures": "textures/items/picture_10"
+    },
+    "liquid_plastic": {
+      "textures": "textures/items/liquid_plastic"
+    },
+    "basketweave_pattern": {
+      "textures": "textures/items/basketweave_pattern"
+    },
+    "brick_pattern": {
+      "textures": "textures/items/brick_pattern"
+    },
+    "herringbone_pattern": {
+      "textures": "textures/items/herringbone_pattern"
+    },
+    "hopscotch_pattern": {
+      "textures": "textures/items/hopscotch_pattern"
+    },
+    "palazzo_pattern": {
+      "textures": "textures/items/palazzo_pattern"
+    },
+     "led_light": {
+      "textures": "textures/items/led_light"
+      },
+     "led_light_white": {
+      "textures": "textures/items/led_light_white"
+      },
+     "led_light_red": {
+      "textures": "textures/items/led_light_red"
+      },
+     "led_light_orange": {
+      "textures": "textures/items/led_light_orange"
+      },
+     "led_light_yellow": {
+      "textures": "textures/items/led_light_yellow"
+      },
+     "led_light_lime": {
+      "textures": "textures/items/led_light_lime"
+      },
+     "led_light_green": {
+      "textures": "textures/items/led_light_green"
+      },
+     "led_light_cyan": {
+      "textures": "textures/items/led_light_cyan"
+      },
+     "led_light_light_blue": {
+      "textures": "textures/items/led_light_light_blue"
+      },
+     "led_light_blue": {
+      "textures": "textures/items/led_light_blue"
+      },
+     "led_light_purple": {
+      "textures": "textures/items/led_light_purple"
+      },
+     "led_light_magenta": {
+      "textures": "textures/items/led_light_magenta"
+      },
+     "led_light_pink": {
+      "textures": "textures/items/led_light_pink"
+      },
+      "traffic_cone": {
+      "textures": "textures/items/traffic_cone"
+      },
+      "sledgehammer": {
+      "textures": "textures/items/sledgehammer"
+      },
+      "plastic_axe": {
+      "textures": "textures/items/plastic_axe"
+      },
+      "wood_saw": {
+      "textures": "textures/items/wood_saw"
+      },
+      "water_container": {
+      "textures": "textures/items/water_container"
+      }
+   }
+}

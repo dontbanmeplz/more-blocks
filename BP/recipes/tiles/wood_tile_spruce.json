@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:wood_tile_spruce"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "#X",
+        "X#"
+      ],
+      "key": {
+        "X": {
+          "item": "minecraft:planks",
+          "data": 1
+        },
+        "#": {
+          "item": "block:ceramic_tile_white"
+        }
+      },
+      "result": {
+         "item": "block:wood_tile_spruce",
+         "count": 2
+      }
+   }
+}

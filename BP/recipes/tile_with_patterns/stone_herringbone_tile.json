@@ -1,0 +1,21 @@
+{
+"format_version": "1.12",
+"minecraft:recipe_shapeless": {
+"description": {
+	"identifier": "block:stone_herringbone_tile"
+	},
+"tags": [ "crafting_table" ],
+"ingredients": [
+	   {
+			"item": "block:stone_tile"
+		},
+		{
+			"item": "item:herringbone_pattern"
+      }
+    ],
+
+"result": {
+		 "item": "block:stone_herringbone_tile"
+		 }
+	}
+}

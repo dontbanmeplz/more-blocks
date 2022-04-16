@@ -1,0 +1,50 @@
+//Code Modified by Vechrozilator
+//Do not reprint or repost
+
+[
+   {
+   "flipbook_texture": "textures/blocks/tiles/granite_tile",
+    "atlas_tile": "granite_tile",
+    "frames": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ]
+   },
+   {
+    "flipbook_texture": "textures/blocks/crimson_top",
+    "atlas_tile": "crimson_top",
+	"ticks_per_frame": 15
+   },
+   {
+    "flipbook_texture": "textures/blocks/crimson_side",
+    "atlas_tile": "crimson_side",
+	"ticks_per_frame": 15
+   },
+   {
+    "flipbook_texture": "textures/blocks/crimson_cabinet",
+    "atlas_tile": "crimson_cabinet",
+	"ticks_per_frame": 15
+   },
+   {
+    "flipbook_texture": "textures/blocks/crimson_drawer",
+    "atlas_tile": "crimson_drawer",
+	"ticks_per_frame": 15
+   },
+   {
+    "flipbook_texture": "textures/blocks/warped_top",
+    "atlas_tile": "warped_top",
+	"ticks_per_frame": 15
+   },
+   {
+    "flipbook_texture": "textures/blocks/warped_side",
+    "atlas_tile": "warped_side",
+	"ticks_per_frame": 15
+   },
+   {
+    "flipbook_texture": "textures/blocks/warped_cabinet",
+    "atlas_tile": "warped_cabinet",
+	"ticks_per_frame": 15
+   },
+   {
+    "flipbook_texture": "textures/blocks/warped_drawer",
+    "atlas_tile": "warped_drawer",
+	"ticks_per_frame": 15
+   }
+]

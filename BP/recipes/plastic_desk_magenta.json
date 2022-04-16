@@ -1,0 +1,29 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:plastic_desk_magenta"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "AAA",
+        "BBB",
+        "BBB"
+      ],
+      "key": {
+        "A": {
+          "item": "block:plastic_magenta"
+        },
+        "B": {
+          "item": "block:plastic_white"
+        }
+      },
+      "result": {
+        "item": "block:plastic_desk_magenta",
+        "count": 6
+      }
+    }
+  }
+  

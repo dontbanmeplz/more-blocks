@@ -1,0 +1,31 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:countertop_block"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "AAA",
+        "BBB",
+        "BBB"
+      ],
+      "key": {
+        "A": {
+          "item": "minecraft:clay",
+          "data": 0
+        },
+        "B": {
+          "item": "minecraft:concrete",
+          "data": 0
+        }
+      },
+      "result": {
+        "item": "block:countertop_block",
+        "count": 6
+      }
+    }
+  }
+  

@@ -1,0 +1,27 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:marble_tile_purple"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "marble_tile"
+            },
+            "tag:stone": {},
+            "minecraft:unit_cube": {},
+            "minecraft:pick_collision": true,
+            "minecraft:entity_collision": true,
+            "minecraft:map_color": "#65209D",
+            "minecraft:explosion_resistance": 30,
+            "minecraft:destroy_time": 10,
+            "minecraft:block_light_emission": 0,
+            "minecraft:block_light_absorption": 15,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            }
+        }
+    }
+}

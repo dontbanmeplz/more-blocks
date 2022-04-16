@@ -1,0 +1,21 @@
+{
+"format_version": "1.12",
+"minecraft:recipe_shapeless": {
+"description": {
+	"identifier": "block:ceramic_brick_tile_purple"
+	},
+"tags": [ "crafting_table" ],
+"ingredients": [
+	   {
+			"item": "block:ceramic_tile_purple"
+		},
+		{
+			"item": "item:brick_pattern"
+      }
+    ],
+
+"result": {
+		 "item": "block:ceramic_brick_tile_purple"
+		 }
+	}
+}

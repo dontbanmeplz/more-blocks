@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "block:ceramic_vinyl_lime"
+    },
+
+    "tags": [ "stonecutter" ],
+    "priority": 7,
+    "ingredients": [
+      {
+        "item": "block:vinyl",
+        "data": 0
+      }
+    ],
+    "result": {
+      "item": "block:ceramic_vinyl_lime"
+    }
+  }
+}

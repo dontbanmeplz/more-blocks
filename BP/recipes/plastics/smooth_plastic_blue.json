@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "block:smooth_plastic_blue"
+    },
+
+    "tags": [ "stonecutter" ],
+    "priority": 0,
+    "ingredients": [
+      {
+        "item": "block:plastic_blue",
+        "data": 0
+      }
+    ],
+    "result": {
+      "item": "block:smooth_plastic_blue"
+    }
+  }
+}

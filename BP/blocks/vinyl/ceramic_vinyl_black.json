@@ -1,0 +1,32 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:ceramic_vinyl_black"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.name.carpet"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "ceramic_tile_black",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:pick_collision": {
+                "origin":  [-8, 0, -8],
+                "size":    [16, 1, 16]
+            },
+            "minecraft:entity_collision": {
+                "origin":  [-8, 0, -8],
+                "size":    [16, 1, 16]
+            },
+            "minecraft:geometry": "geometry.vinyl",
+            "minecraft:destroy_time": 1,
+            "minecraft:block_light_filter": 0,
+            "minecraft:block_light_emission": 0
+        }
+    }
+}

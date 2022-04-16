@@ -1,0 +1,101 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:doorbell",
+            "properties": {
+                "facing:direction": [ 2, 3, 4, 5 ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "items"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "furniture_default_color",
+                    "render_method": "opaque"
+                },
+                "button": {
+                    "texture": "smooth_plastic_white",
+                    "render_method": "opaque"
+                }
+            },
+            "tag:metal": {},
+            "minecraft:pick_collision": {
+                "origin": [ -3, 3, -8 ],
+                "size": [ 6, 9, 2 ]
+            },
+            "minecraft:entity_collision": {
+                "origin": [ -3, 3, -8 ],
+                "size": [ 6, 9, 2 ]
+            },
+            "minecraft:loot": "loot_tables/blocks/doorbell.json",
+            "minecraft:geometry": "geometry.doorbell",
+            "minecraft:destroy_time": 4,
+            "minecraft:on_player_placing": {
+                "event": "facing_direction"
+            },
+            "minecraft:on_interact": {
+                "event": "playsound"
+             },
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                       "block_filter": [
+                            {
+                               "tags": "!query.any_tag('air')"
+                            }
+                       ],
+                       "allowed_faces": [ "north", "east", "south", "west" ]
+                    }
+                ]
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_absorption": 0
+        },
+        "events": {
+            "facing_direction": {
+                "set_block_property": {
+                    "facing:direction": "(query.cardinal_facing_2d)"
+                }
+            },
+            "playsound": {
+                "run_command": {
+                    "command": [ "playsound doorbell.sound @a[r=10]" ]
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('facing:direction') == 2",
+                "components": {
+                    "minecraft:rotation": [ 0, 0, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('facing:direction') == 3",
+                "components": {
+                    "minecraft:rotation": [ 0, 180, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('facing:direction') == 4",
+                "components": {
+                    "minecraft:rotation": [ 0, 90, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('facing:direction') == 5",
+                "components": {
+                    "minecraft:rotation": [ 0, 270, 0 ]
+                }
+            }
+        ]
+    }
+}

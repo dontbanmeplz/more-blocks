@@ -1,0 +1,90 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:gas_stove",
+            "properties": {
+                "block:placement_state": [ 2, 3, 4, 5 ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "items"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "furniture_gray_color",
+                    "render_method": "opaque"
+                },
+                "foot": {
+                    "texture": "smooth_plastic_gray",
+                    "render_method": "opaque"
+                },
+                "burner": {
+                    "texture": "smooth_plastic_gray",
+                    "render_method": "opaque"
+                },
+                "knob": {
+                    "texture": "furniture_default_color",
+                    "render_method": "opaque"
+                }
+            },
+            "tag:metal": {},
+            "minecraft:pick_collision": {
+                "origin": [ -8, 0, -8 ],
+                "size": [ 16, 7, 15 ]
+            },
+            "minecraft:entity_collision": {
+                "origin": [ -8, 0, -8 ],
+                "size": [ 16, 7, 15 ]
+            },
+            "minecraft:loot": "loot_tables/blocks/gas_stove.json",
+            "minecraft:geometry": "geometry.gas_stove",
+            "minecraft:destroy_time": 4,
+            "minecraft:on_player_placing": {
+                "event": "placement_state"
+            },
+            "minecraft:map_color": "#7D7D73",
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_absorption": 0
+        },
+        "events": {
+            "placement_state": {
+                "set_block_property": {
+                    "block:placement_state": "(query.cardinal_facing_2d)"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('block:placement_state') == 2",
+                "components": {
+                    "minecraft:rotation": [ 0, 0, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 3",
+                "components": {
+                    "minecraft:rotation": [ 0, 180, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 4",
+                "components": {
+                    "minecraft:rotation": [ 0, 90, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 5",
+                "components": {
+                    "minecraft:rotation": [ 0, 270, 0 ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:block_light_white"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "###",
+        "#L#",
+        "XXX"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:stained_glass_pane",
+          "data": 0
+        },
+        "L": {
+          "item": "item:led_light_white"
+        },
+        "X": {
+           "item": "minecraft:iron_ingot"
+         }
+      },
+      "result": {
+        "item": "block:block_light_white"
+      }
+    }
+  }
+  

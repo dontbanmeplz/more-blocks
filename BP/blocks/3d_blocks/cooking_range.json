@@ -1,0 +1,94 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:cooking_range",
+            "properties": {
+                "block:placement_state": [ 2, 3, 4, 5 ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "items"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "cooking_range_base",
+                    "render_method": "opaque"
+                },
+                "base_back": {
+                    "texture": "cooking_range_back",
+                    "render_method": "opaque"
+                },
+                "base_side": {
+                    "texture": "cooking_range_side",
+                    "render_method": "opaque"
+                },
+                "front": {
+                    "texture": "cooking_range_front",
+                    "render_method": "opaque"
+                },
+                "door": {
+                    "texture": "cooking_range_door",
+                    "render_method": "opaque"
+                },
+                "top": {
+                    "texture": "furniture_gray_color",
+                    "render_method": "opaque"
+                },
+                "burner": {
+                    "texture": "smooth_plastic_gray",
+                    "render_method": "opaque"
+                }
+            },
+            "tag:metal": {},
+            "minecraft:loot": "loot_tables/blocks/cooking_range.json",
+            "minecraft:geometry": "geometry.cooking_range",
+            "minecraft:destroy_time": 7,
+            "minecraft:on_player_placing": {
+                "event": "block:placement_state"
+            },
+            "minecraft:map_color": "#3B3D94",
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_absorption": 0
+        },
+        "events": {
+            "block:placement_state": {
+                "set_block_property": {
+                    "block:placement_state": "(query.cardinal_facing_2d)"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('block:placement_state') == 2",
+                "components": {
+                    "minecraft:rotation": [ 0, 0, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 3",
+                "components": {
+                    "minecraft:rotation": [ 0, 180, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 4",
+                "components": {
+                    "minecraft:rotation": [ 0, 90, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 5",
+                "components": {
+                    "minecraft:rotation": [ 0, 270, 0 ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,118 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:countertop_cabinet",
+            "properties": {
+                "facing:direction": [ 2, 3, 4, 5 ],
+                "state:countertop": [ "left", "right" ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "countertop"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "white_cement",
+                    "render_method": "opaque"
+                },
+                "base": {
+                    "texture": "countertop_base_color",
+                    "render_method": "opaque"
+                },
+                "top": {
+                    "texture": "countertop_top_color",
+                    "render_method": "opaque"
+                },
+                "door": {
+                    "texture": "plastic_light_gray",
+                    "render_method": "opaque"
+                },
+                "handle": {
+                    "texture": "smooth_plastic_black",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:aim_collision": {
+                "origin": [ -8, 0, -8 ],
+                "size": [ 16, 16, 15 ]
+            },
+            "minecraft:block_collision": {
+                "origin": [ -8, 0, -8 ],
+                "size": [ 16, 16, 15 ]
+            },
+            "minecraft:loot": "loot_tables/blocks/countertop_cabinet.json",
+            "minecraft:geometry": "geometry.countertop.cabinet_left",
+            "minecraft:destroy_time": 7,
+            "minecraft:on_player_placing": {
+                "event": "facing_direction"
+            },
+            "minecraft:map_color": "#575C5C",
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_absorption": 0
+        },
+        "events": {
+            "facing_direction": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "facing:direction": "(query.cardinal_facing_2d)"
+                        }
+                    },
+                    {
+                        "condition": "query.is_sneaking",
+                        "set_block_property": {
+                            "state:countertop": "'right'"
+                        }
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('facing:direction') == 2",
+                "components": {
+                    "tag:stone": {},
+                    "tag:countertopN": {},
+                    "minecraft:rotation": [ 0, 0, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('facing:direction') == 3",
+                "components": {
+                    "tag:stone": {},
+                    "tag:countertopS": {},
+                    "minecraft:rotation": [ 0, 180, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('facing:direction') == 4",
+                "components": {
+                    "tag:stone": {},
+                    "tag:countertopW": {},
+                    "minecraft:rotation": [ 0, 90, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('facing:direction') == 5",
+                "components": {
+                    "tag:stone": {},
+                    "tag:countertopE": {},
+                    "minecraft:rotation": [ 0, 270, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('state:countertop') == 'right'",
+                "components": {
+                    "minecraft:geometry": "geometry.countertop.cabinet_right"
+                }
+            }
+        ]
+    }
+}

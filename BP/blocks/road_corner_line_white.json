@@ -1,0 +1,77 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "block:road_corner_line_white",
+      "properties": {
+        "block:placement_state": [ 2, 3, 4, 5 ]
+      }
+    },
+    "components": {
+          "minecraft:creative_category": {
+                "category": "construction",
+                "group": "road_block"
+            },
+           "minecraft:material_instances": {
+               "*": {
+                  "texture": "road_block",
+                  "render_method": "opaque"
+              },
+              "ends": {
+                  "texture": "road_corner_line_white",
+                  "render_method": "opaque"
+               },
+               "up": "ends",
+               "down": "ends"
+           },
+           "tag:stone": {},
+           "minecraft:loot": "loot_tables/blocks/road_corner_line_white.json",
+           "minecraft:destroy_time": 10.0,
+           "minecraft:unit_cube": {},
+           "minecraft:map_color": "#303030",
+           "minecraft:flammable": {
+           "flame_odds": 0,
+           "burn_odds": 0
+           },
+           "minecraft:on_player_placing": {
+           "event": "placement_state"
+           },
+           "minecraft:block_light_absorption": 1,
+           "minecraft:block_light_emission": 0.0,
+           "minecraft:explosion_resistance": 30
+          },
+         "events": {
+            "placement_state": {
+                "set_block_property": {
+                     "block:placement_state": "(query.cardinal_facing_2d)"
+             }
+         }
+    },
+    "permutations": [
+            {
+                "condition": "query.block_property('block:placement_state') == 2",
+                "components": {
+                    "minecraft:rotation": [ 0, 0, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 3",
+                "components": {
+                    "minecraft:rotation": [ 0, 180, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 4",
+                "components": {
+                    "minecraft:rotation": [ 0, 90, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') == 5",
+                "components": {
+                    "minecraft:rotation": [ 0, 270, 0 ]
+                }
+            }
+        ]
+    }
+}

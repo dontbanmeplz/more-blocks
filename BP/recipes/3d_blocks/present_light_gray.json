@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:present_light_gray"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:wool",
+          "data": 8
+        }
+      },
+      "result": {
+        "item": "block:present_light_gray"
+      }
+    }
+  }
+  

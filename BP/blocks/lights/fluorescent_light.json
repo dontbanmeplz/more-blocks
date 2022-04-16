@@ -1,0 +1,153 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:fluorescent_light",
+            "properties": {
+                "block:placement_state": [ 1, 2, 3, 4, 5, 6 ],
+                "block:light_part": [ "default", "middle", "left", "right" ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "light"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "light_bulb_default_color",
+                    "render_method": "opaque"
+                },
+                "bulb": {
+                    "texture": "light_bulb_default_color",
+                    "render_method": "opaque"
+                },
+                "base": {
+                    "texture": "furniture_default_color",
+                    "render_method": "opaque"
+                }
+            },
+            "tag:light": {},
+            "minecraft:aim_collision": {
+                "origin": [ -8, 10, -3 ],
+                "size": [ 16, 6, 6 ]
+            },
+            "minecraft:loot": "loot_tables/blocks/fluorescent_light.json",
+            "minecraft:geometry": "geometry.fluorescent_light",
+            "minecraft:destroy_time": 4,
+            "minecraft:breakonpush": true,
+            "minecraft:on_player_placing": {
+                "event": "facing_direction"
+            },
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:block_light_emission": 1.0,
+            "minecraft:block_light_filter": 0,
+            "minecraft:part_visibility": {
+                "rules": {
+                    "default": "query.block_property('block:light_part') == 'default'",
+                    "middle": "query.block_property('block:light_part') == 'middle'",
+                    "left": "query.block_property('block:light_part') == 'left'",
+                    "right": "query.block_property('block:light_part') == 'right'"
+                }
+            }
+        },
+        "events": {
+            "facing_direction": {
+                "set_block_property": {
+                    "block:placement_state": "(query.cardinal_facing_2d)"
+                }
+            },
+            "set_states0": {
+                "sequence": [
+                    {
+                        "condition": "!q.block_neighbor_has_all_tags(1,0,0,'rotation0') && !q.block_neighbor_has_all_tags(-1,0,0,'rotation0')",
+                        "set_block_property": {
+                            "block:light_part": "'default'"
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(1,0,0,'rotation0') && q.block_neighbor_has_all_tags(-1,0,0,'rotation0')",
+                        "set_block_property": {
+                            "block:light_part": "'middle'"
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(1,0,0,'rotation0') && !q.block_neighbor_has_all_tags(-1,0,0,'rotation0')",
+                        "set_block_property": {
+                            "block:light_part": "'left'"
+                        }
+                    },
+                    {
+                        "condition": "!q.block_neighbor_has_all_tags(1,0,0,'rotation0') && q.block_neighbor_has_all_tags(-1,0,0,'rotation0')",
+                        "set_block_property": {
+                            "block:light_part": "'right'"
+                        }
+                    }
+                ]
+            },
+            "set_states90": {
+                "sequence": [
+                    {
+                        "condition": "!q.block_neighbor_has_all_tags(0,0,1,'rotation90') && !q.block_neighbor_has_all_tags(0,0,-1,'rotation90')",
+                        "set_block_property": {
+                            "block:light_part": "'default'"
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,0,1,'rotation90') && q.block_neighbor_has_all_tags(0,0,-1,'rotation90')",
+                        "set_block_property": {
+                            "block:light_part": "'middle'"
+                        }
+                    },
+                    {
+                        "condition": "!q.block_neighbor_has_all_tags(0,0,1,'rotation90') && q.block_neighbor_has_all_tags(0,0,-1,'rotation90')",
+                        "set_block_property": {
+                            "block:light_part": "'left'"
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_all_tags(0,0,1,'rotation90') && !q.block_neighbor_has_all_tags(0,0,-1,'rotation90')",
+                        "set_block_property": {
+                            "block:light_part": "'right'"
+                        }
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('block:placement_state') <= 3",
+                "components": {
+                    "tag:rotation0": {},
+                    "minecraft:rotation": [ 0, 0, 0 ],
+                    "minecraft:ticking": {
+                        "looping": true,
+                        "range": [ 0, 0 ],
+                        "on_tick": {
+                            "event": "set_states0",
+                            "target": "self"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('block:placement_state') >= 4",
+                "components": {
+                    "tag:rotation90": {},
+                    "minecraft:rotation": [ 0, 90, 0 ],
+                    "minecraft:ticking": {
+                        "looping": true,
+                        "range": [ 0, 0 ],
+                        "on_tick": {
+                            "event": "set_states90",
+                            "target": "self"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

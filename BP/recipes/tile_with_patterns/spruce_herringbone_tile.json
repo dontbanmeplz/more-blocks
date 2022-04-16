@@ -1,0 +1,21 @@
+{
+"format_version": "1.12",
+"minecraft:recipe_shapeless": {
+"description": {
+	"identifier": "block:spruce_herringbone_tile"
+	},
+"tags": [ "crafting_table" ],
+"ingredients": [
+	   {
+			"item": "block:wood_tile_spruce"
+		},
+		{
+			"item": "item:herringbone_pattern"
+      }
+    ],
+
+"result": {
+		 "item": "block:spruce_herringbone_tile"
+		 }
+	}
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "block:gingham_wallpaper_gray"
+    },
+
+    "tags": [ "stonecutter" ],
+    "priority": 0,
+    "ingredients": [
+      {
+        "item": "minecraft:concrete",
+        "data": 7
+      }
+    ],
+    "result": {
+      "item": "block:gingham_wallpaper_gray"
+    }
+  }
+}

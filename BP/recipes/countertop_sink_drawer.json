@@ -1,0 +1,21 @@
+{
+"format_version": "1.12",
+"minecraft:recipe_shapeless": {
+"description": {
+	"identifier": "block:countertop_sink_drawer"
+	},
+"tags": [ "crafting_table" ],
+"ingredients": [
+	   {
+			"item": "block:countertop_drawer"
+		},
+		{
+			"item": "block:sink_attachment"
+      }
+    ],
+
+"result": {
+		 "item": "block:countertop_sink_drawer"
+		 }
+	}
+}

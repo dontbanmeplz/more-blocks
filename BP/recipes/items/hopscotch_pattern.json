@@ -1,0 +1,21 @@
+{
+"format_version": "1.12",
+"minecraft:recipe_shapeless": {
+"description": {
+	"identifier": "item:hopscotch_pattern"
+	},
+"tags": [ "crafting_table" ],
+"ingredients": [
+	   {
+			"item": "minecraft:frame"
+		},
+		{
+			"item": "minecraft:golden_apple"
+      }
+    ],
+
+"result": {
+		 "item": "item:hopscotch_pattern"
+		 }
+	}
+}

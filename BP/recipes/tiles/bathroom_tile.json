@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:bathroom_tile"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "block:ceramic_tile_white"
+        }
+      },
+      "result": {
+        "item": "block:bathroom_tile",
+        "count": 3
+      }
+    }
+  }
+  

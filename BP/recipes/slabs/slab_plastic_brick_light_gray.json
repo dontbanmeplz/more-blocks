@@ -1,0 +1,24 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "block:slab_plastic_brick_light_gray"
+      },
+  
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "block:plastic_brick_light_gray"
+        }
+      },
+      "result": {
+        "item": "block:slab_plastic_brick_light_gray",
+        "count": 6
+      }
+    }
+  }
+  

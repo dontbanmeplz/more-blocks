@@ -1,0 +1,352 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "block:picture_frame",
+            "properties": {
+                "facing:direction": [ 2, 3, 4, 5 ],
+                "block:picture_display": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ],
+                "block:is_empty": [ false, true ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "picture"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                  "texture": "furniture_default_color",
+                  "render_method": "opaque"
+                },
+                "picture": {
+                  "texture": "smooth_plastic_white",
+                  "render_method": "opaque"
+                }
+            },
+            "tag:plastic": {},
+            "minecraft:aim_collision": {
+                "origin": [ -5, 0, -3 ],
+                "size": [ 10, 15, 7 ]
+            },
+            "minecraft:block_collision": {
+                "origin": [ -5, 0, -3 ],
+                "size": [ 10, 15, 7 ]
+            },
+            "minecraft:breakonpush": true,
+            "minecraft:geometry": "geometry.picture_frame",
+            "minecraft:destroy_time": 2,
+            "minecraft:on_player_placing": {
+                "event": "placement_state"
+            },
+            "minecraft:map_color": "#3B3D94",
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                       "allowed_faces": [ "up" ]
+                    }
+                ]
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_absorption": 0
+        },
+        "events": {
+            "placement_state": {
+                "set_block_property": {
+                    "facing:direction": "(query.cardinal_facing_2d)",
+                    "block:is_empty": true,
+                    "block:picture_display": 0
+                }
+            },
+            "set_display": {
+                "sequence": [
+                    {
+                        "condition": "query.is_item_name_any('slot.weapon.mainhand','item:picture_1')",
+                        "set_block_property": {
+                            "block:is_empty": false,
+                            "block:picture_display": 1
+                        }
+                    },
+                    {
+                        "condition": "query.is_item_name_any('slot.weapon.mainhand','item:picture_2')",
+                        "set_block_property": {
+                            "block:is_empty": false,
+                            "block:picture_display": 2
+                        }
+                    },
+                    {
+                        "condition": "query.is_item_name_any('slot.weapon.mainhand','item:picture_3')",
+                        "set_block_property": {
+                            "block:is_empty": false,
+                            "block:picture_display": 3
+                        }
+                    },
+                    {
+                        "condition": "query.is_item_name_any('slot.weapon.mainhand','item:picture_4')",
+                        "set_block_property": {
+                            "block:is_empty": false,
+                            "block:picture_display": 4
+                        }
+                    },
+                    {
+                        "condition": "query.is_item_name_any('slot.weapon.mainhand','item:picture_5')",
+                        "set_block_property": {
+                            "block:is_empty": false,
+                            "block:picture_display": 5
+                        }
+                    },
+                    {
+                        "condition": "query.is_item_name_any('slot.weapon.mainhand','item:picture_6')",
+                        "set_block_property": {
+                            "block:is_empty": false,
+                            "block:picture_display": 6
+                        }
+                    },
+                    {
+                        "condition": "query.is_item_name_any('slot.weapon.mainhand','item:picture_7')",
+                        "set_block_property": {
+                            "block:is_empty": false,
+                            "block:picture_display": 7
+                        }
+                    },
+                    {
+                        "condition": "query.is_item_name_any('slot.weapon.mainhand','item:picture_8')",
+                        "set_block_property": {
+                            "block:is_empty": false,
+                            "block:picture_display": 8
+                        }
+                    },
+                    {
+                        "condition": "query.is_item_name_any('slot.weapon.mainhand','item:picture_9')",
+                        "set_block_property": {
+                            "block:is_empty": false,
+                            "block:picture_display": 9
+                        }
+                    },
+                    {
+                        "condition": "query.is_item_name_any('slot.weapon.mainhand','item:picture_10')",
+                        "set_block_property": {
+                            "block:is_empty": false,
+                            "block:picture_display": 10
+                        }
+                    },
+                    {
+                        "condition": "query.equipped_item_any_tag('slot.weapon.mainhand','picture')",
+                        "decrement_stack": {
+                            "ignore_game_mode": false
+                        }
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('facing:direction') == 2",
+                "components": {
+                    "minecraft:rotation": [ 0, 0, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('facing:direction') == 3",
+                "components": {
+                    "minecraft:rotation": [ 0, 180, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('facing:direction') == 4",
+                "components": {
+                    "minecraft:rotation": [ 0, 90, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('facing:direction') == 5",
+                "components": {
+                    "minecraft:rotation": [ 0, 270, 0 ]
+                }
+            },
+            {
+                "condition": "query.block_property('block:is_empty') == true && query.block_property('block:picture_display') == 0",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/picture_frame.json",
+                    "minecraft:material_instances": {
+                       "*": {
+                          "texture": "furniture_default_color",
+                          "render_method": "opaque"
+                       },
+                       "picture": {
+                          "texture": "smooth_plastic_white",
+                          "render_method": "opaque"
+                         }
+                     },
+                     "minecraft:on_interact": {
+                         "event": "set_display"
+                      }
+                 }
+            },
+            {
+                "condition": "query.block_property('block:is_empty') == false && query.block_property('block:picture_display') == 1",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/picture_frame_1.json",
+                    "minecraft:material_instances": {
+                       "*": {
+                          "texture": "furniture_default_color",
+                          "render_method": "opaque"
+                       },
+                       "picture": {
+                          "texture": "picture_1",
+                          "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('block:is_empty') == false && query.block_property('block:picture_display') == 2",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/picture_frame_2.json",
+                    "minecraft:material_instances": {
+                       "*": {
+                          "texture": "furniture_default_color",
+                          "render_method": "opaque"
+                       },
+                       "picture": {
+                          "texture": "picture_2",
+                          "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('block:is_empty') == false && query.block_property('block:picture_display') == 3",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/picture_frame_3.json",
+                    "minecraft:material_instances": {
+                       "*": {
+                          "texture": "furniture_default_color",
+                          "render_method": "opaque"
+                       },
+                       "picture": {
+                          "texture": "picture_3",
+                          "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('block:is_empty') == false && query.block_property('block:picture_display') == 4",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/picture_frame_4.json",
+                    "minecraft:material_instances": {
+                       "*": {
+                          "texture": "furniture_default_color",
+                          "render_method": "opaque"
+                       },
+                       "picture": {
+                          "texture": "picture_4",
+                          "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('block:is_empty') == false && query.block_property('block:picture_display') == 5",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/picture_frame_5.json",
+                    "minecraft:material_instances": {
+                       "*": {
+                          "texture": "furniture_default_color",
+                          "render_method": "opaque"
+                       },
+                       "picture": {
+                          "texture": "picture_5",
+                          "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('block:is_empty') == false && query.block_property('block:picture_display') == 6",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/picture_frame_6.json",
+                    "minecraft:material_instances": {
+                       "*": {
+                          "texture": "furniture_default_color",
+                          "render_method": "opaque"
+                       },
+                       "picture": {
+                          "texture": "picture_6",
+                          "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('block:is_empty') == false && query.block_property('block:picture_display') == 7",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/picture_frame_7.json",
+                    "minecraft:material_instances": {
+                       "*": {
+                          "texture": "furniture_default_color",
+                          "render_method": "opaque"
+                       },
+                       "picture": {
+                          "texture": "picture_7",
+                          "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('block:is_empty') == false && query.block_property('block:picture_display') == 8",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/picture_frame_8.json",
+                    "minecraft:material_instances": {
+                       "*": {
+                          "texture": "furniture_default_color",
+                          "render_method": "opaque"
+                       },
+                       "picture": {
+                          "texture": "picture_8",
+                          "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('block:is_empty') == false && query.block_property('block:picture_display') == 9",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/picture_frame_9.json",
+                    "minecraft:material_instances": {
+                       "*": {
+                          "texture": "furniture_default_color",
+                          "render_method": "opaque"
+                       },
+                       "picture": {
+                          "texture": "picture_9",
+                          "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('block:is_empty') == false && query.block_property('block:picture_display') == 10",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/picture_frame_10.json",
+                    "minecraft:material_instances": {
+                       "*": {
+                          "texture": "furniture_default_color",
+                          "render_method": "opaque"
+                       },
+                       "picture": {
+                          "texture": "picture_10",
+                          "render_method": "opaque"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

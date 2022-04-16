@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "item:wood_saw"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "#  ",
+      " # ",
+      "  S"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:iron_ingot"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+        "item": "item:wood_saw"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "block:lpg_tank"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " # ",
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:iron_ingot"
+        }
+      },
+    "result": {
+      "item": "block:lpg_tank"
+    }
+  }
+}
