@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:greek_horizontal_portal_obsidian_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:greek_horizontal_portal_obsidian"
+            }
+        ],
+        "result": {
+            "item": "minecraft:obsidian",
+            "count": 1
+        }
+    }
+}

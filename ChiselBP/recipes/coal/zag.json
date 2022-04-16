@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:zag_coal"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+       "item": "minecraft:coal_block"
+      }
+    ],
+    "result": {
+      "item": "chisel:zag_coal",
+      "count": 1
+    }
+  }
+}

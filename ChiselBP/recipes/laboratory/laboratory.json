@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "chisel:laboratory_laboratory"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "SSS",
+      "SQS",
+	  "SSS"
+    ],
+    "key": {
+      "Q": {
+        "item": "minecraft:quartz"
+      },
+	       "S": {
+        "item": "minecraft:stone"
+      }
+    },
+    "result": {
+      "item": "chisel:laboratory_laboratory",
+	  "count": 8
+    }
+  }
+}

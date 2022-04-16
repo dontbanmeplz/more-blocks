@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:frenchtwo_concrete_orange"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:concrete",
+		"data": 1
+      }
+    ],
+    "result": {
+      "item": "chisel:frenchtwo_concrete_orange",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:gold_coin_heads"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:gold_block"
+      }
+    ],
+    "result": {
+      "item": "chisel:gold_coin_heads",
+      "count": 1
+    }
+  }
+}

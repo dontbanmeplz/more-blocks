@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:rust2_factory_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:rust2_factory"
+            }
+        ],
+        "result": {
+            "item": "chisel:factory_factory",
+            "count": 1
+        }
+    }
+}

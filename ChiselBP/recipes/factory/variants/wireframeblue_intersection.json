@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:wireframeblue_intersection_factory"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:wireframeblue_factory"
+      }
+    ],
+    "result": {
+      "item": "chisel:wireframeblue_intersection_factory",
+      "count": 1
+    }
+  }
+}

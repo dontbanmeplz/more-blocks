@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:fancy_warped_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:fancy_warped"
+            }
+        ],
+        "result": {
+            "item": "minecraft:warped_planks",
+            "count": 1
+        }
+    }
+}

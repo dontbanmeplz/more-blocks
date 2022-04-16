@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:frenchtwo_basalt_nether"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:basalt"
+      }
+    ],
+    "result": {
+      "item": "chisel:frenchtwo_basalt_nether",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:raw_marble_uncraft"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:raw_marble"
+            },
+            {
+                "item": "minecraft:stone",
+                "data": 3
+            }
+        ],
+        "result": {
+            "item": "minecraft:stone",
+            "count": 1,
+            "data": 0
+        }
+    }
+}

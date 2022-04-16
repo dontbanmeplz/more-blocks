@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:road_prismarine_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:road_prismarine"
+            }
+        ],
+        "result": {
+            "item": "minecraft:prismarine",
+            "count": 1
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Chisel for Minecraft Bedrock! Follow me on Twitter for updates @MC77Rivers",
+        "name": "Chisel Bedrock Edition Resource Pack",
+        "uuid": "dc128271-82a2-4b1f-811d-439cceb2dab1",
+        "version": [1, 1, 7],
+        "min_engine_version": [ 1, 16, 0 ]
+    },
+    "modules": [
+        {
+            "description": "Chisel for Minecraft Bedrock!",
+            "type": "resources",
+            "uuid": "1f17dd00-cafc-4920-ba4f-131373b91d68",
+            "version": [1, 1, 7]
+        }
+    ]
+}

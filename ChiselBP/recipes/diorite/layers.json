@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:layers_diorite"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:stone",
+		"data": 4
+      }
+    ],
+    "result": {
+      "item": "chisel:layers_diorite",
+      "count": 1
+    }
+  }
+}

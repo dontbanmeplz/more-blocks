@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:mosaic_bricks_inner_white"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:mosaic_bricks"
+      }
+    ],
+    "result": {
+      "item": "chisel:bricks_inner_white",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:directionup_trim_back_laboratory"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:directionup_laboratory"
+      }
+    ],
+    "result": {
+      "item": "chisel:directionup_trim_back_laboratory",
+      "count": 1
+    }
+  }
+}

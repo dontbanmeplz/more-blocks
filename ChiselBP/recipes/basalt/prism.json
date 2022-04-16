@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:prism_basalt"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:raw_basalt"
+      }
+    ],
+    "result": {
+      "item": "chisel:prism_basalt",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:lava_bricks_small_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:lava_bricks_small"
+            }
+        ],
+        "result": {
+            "item": "chisel:lava_cobble",
+            "count": 1
+        }
+    }
+}

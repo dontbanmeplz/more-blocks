@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:dent_basalt_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:dent_basalt"
+            }
+        ],
+        "result": {
+            "item": "chisel:raw_basalt",
+            "count": 1
+        }
+    }
+}

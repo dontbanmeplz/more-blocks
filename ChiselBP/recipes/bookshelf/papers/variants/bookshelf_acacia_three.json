@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:papers_bookshelf_acacia_three"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:papers_bookshelf_acacia"
+      }
+    ],
+    "result": {
+      "item": "chisel:papers_bookshelf_acacia_three",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:vertical_acacia"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:planks",
+		"data": 4
+      }
+    ],
+    "result": {
+      "item": "chisel:vertical_acacia",
+      "count": 1
+    }
+  }
+}

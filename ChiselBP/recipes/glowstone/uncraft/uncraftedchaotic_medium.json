@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:chaotic_medium_glowstone_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:chaotic_medium_glowstone"
+            }
+        ],
+        "result": {
+            "item": "minecraft:glowstone",
+            "count": 1
+        }
+    }
+}

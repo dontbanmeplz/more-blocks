@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:bricks_triple_limestone_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:bricks_triple_limestone"
+            }
+        ],
+        "result": {
+            "item": "chisel:raw_limestone",
+            "count": 1
+        }
+    }
+}

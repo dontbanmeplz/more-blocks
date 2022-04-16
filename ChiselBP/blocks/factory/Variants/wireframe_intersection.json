@@ -1,0 +1,18 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "chisel:wireframe_intersection_factory",
+      "register_to_creative_menu": false,
+      "is_experimental": false
+    },
+        "components": {
+			"minecraft:destroy_time": 0.5,
+			"minecraft:explosion_resistance": 20,
+			"minecraft:block_light_absorption": 16,
+			"minecraft:unit_cube": {},
+			"minecraft:map_color": "#6a524a",
+			"minecraft:block_light_emission": 0
+        }
+    }
+}

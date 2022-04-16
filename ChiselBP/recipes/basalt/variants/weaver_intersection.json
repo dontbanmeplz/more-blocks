@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:weaver_intersection_basalt"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:weaver_basalt"
+      }
+    ],
+    "result": {
+      "item": "chisel:weaver_intersection_basalt",
+      "count": 1
+    }
+  }
+}
+

@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:weaver_trim_diorite_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:weaver_trim_diorite"
+            }
+        ],
+        "result": {
+            "item": "chisel:weaver_diorite",
+            "count": 1
+        }
+    }
+}

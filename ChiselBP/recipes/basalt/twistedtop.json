@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:twistedtop_basalt"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:raw_basalt"
+      }
+    ],
+    "result": {
+      "item": "chisel:twistedtop_basalt",
+      "count": 1
+    }
+  }
+}

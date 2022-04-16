@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:ice_trim_factory"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:ice_factory"
+      }
+    ],
+    "result": {
+      "item": "chisel:ice_trim_factory",
+      "count": 1
+    }
+  }
+}

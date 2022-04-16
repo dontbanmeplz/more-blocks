@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:panel_marble_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:panel_marble"
+            }
+        ],
+        "result": {
+            "item": "chisel:raw_marble",
+            "count": 1
+        }
+    }
+}

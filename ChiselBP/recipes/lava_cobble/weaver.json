@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:lava_weaver"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:lava_cobble"
+      }
+    ],
+    "result": {
+      "item": "chisel:lava_weaver",
+      "count": 1
+    }
+  }
+}
+

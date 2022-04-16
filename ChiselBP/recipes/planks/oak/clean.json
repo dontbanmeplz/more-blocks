@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:clean_oak"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:planks",
+		"data": 0
+      }
+    ],
+    "result": {
+      "item": "chisel:clean_oak",
+      "count": 1
+    }
+  }
+}

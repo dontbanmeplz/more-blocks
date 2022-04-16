@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:mosaic_trim_stone"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:mosaic_stone"
+      }
+    ],
+    "result": {
+      "item": "chisel:mosaic_trim_stone",
+      "count": 1
+    }
+  }
+}

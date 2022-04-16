@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:uncraftedlargetile_trim_laboratory"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:largetile_trim_laboratory"
+      }
+    ],
+    "result": {
+      "item": "chisel:largetile_laboratory",
+      "count": 1
+    }
+  }
+}

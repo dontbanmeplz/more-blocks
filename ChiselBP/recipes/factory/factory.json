@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "chisel:factory_factory"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ISI",
+      "S S",
+	  "ISI"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+	       "S": {
+        "item": "minecraft:stone"
+      }
+    },
+    "result": {
+      "item": "chisel:factory_factory",
+	  "count": 16
+    }
+  }
+}

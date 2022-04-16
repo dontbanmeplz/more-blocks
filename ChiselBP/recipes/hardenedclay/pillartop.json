@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:pillartop_hardenedclay"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:hardened_clay"
+      }
+    ],
+    "result": {
+      "item": "chisel:pillartop_hardenedclay",
+      "count": 1
+    }
+  }
+}

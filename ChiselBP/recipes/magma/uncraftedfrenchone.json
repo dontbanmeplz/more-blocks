@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:magma_frenchone_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:magma_frenchone"
+            }
+        ],
+        "result": {
+            "item": "minecraft:magma",
+            "count": 1
+        }
+    }
+}

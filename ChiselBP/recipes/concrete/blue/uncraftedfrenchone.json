@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:frenchone_concrete_blue_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:frenchone_concrete_blue"
+            }
+        ],
+        "result": {
+            "item": "minecraft:concrete",
+            "count": 1,
+            "data": 11
+        }
+    }
+}

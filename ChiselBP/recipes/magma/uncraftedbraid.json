@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:magma_braid_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:magma_braid"
+            }
+        ],
+        "result": {
+            "item": "minecraft:magma",
+            "count": 1
+        }
+    }
+}

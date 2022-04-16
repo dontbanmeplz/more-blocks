@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "chisel:lava_cobble"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "CCC",
+      "CLC",
+      "CCC"
+    ],
+    "key": {
+      "L": {
+        "item": "minecraft:bucket",
+		"data": 10
+      },
+	    "C": {
+        "item": "minecraft:cobblestone"
+      }
+	},
+    
+"result": [
+      {"item": "chisel:lava_cobble", "count": 8},
+      {"item": "minecraft:bucket"}
+    ]
+  }
+}

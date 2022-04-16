@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:gold_star_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:gold_star"
+            }
+        ],
+        "result": {
+            "item": "minecraft:gold_block",
+            "count": 1
+        }
+    }
+}

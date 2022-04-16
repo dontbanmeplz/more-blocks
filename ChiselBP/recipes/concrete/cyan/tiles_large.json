@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:tiles_large_concrete_cyan"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:concrete",
+		"data": 9
+      }
+    ],
+    "result": {
+      "item": "chisel:tiles_large_concrete_cyan",
+      "count": 1
+    }
+  }
+}

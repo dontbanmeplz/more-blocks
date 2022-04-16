@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:iron_vents_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:iron_vents"
+            }
+        ],
+        "result": {
+            "item": "minecraft:iron_block",
+            "count": 1
+        }
+    }
+}

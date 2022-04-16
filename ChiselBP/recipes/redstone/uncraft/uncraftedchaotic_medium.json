@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:chaotic_medium_redstone_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:chaotic_medium_redstone"
+            }
+        ],
+        "result": {
+            "item": "minecraft:redstone_block",
+            "count": 1
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:rustplates_trim_factory"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:rustplates_factory"
+      }
+    ],
+    "result": {
+      "item": "chisel:rustplates_trim_factory",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:frenchtwo_prismarine"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:prismarine"
+      }
+    ],
+    "result": {
+      "item": "chisel:frenchtwo_prismarine",
+      "count": 1
+    }
+  }
+}

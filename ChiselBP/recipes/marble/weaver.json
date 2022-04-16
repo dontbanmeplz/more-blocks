@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:weaver_marble"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:raw_marble"
+      }
+    ],
+    "result": {
+      "item": "chisel:weaver_marble",
+      "count": 1
+    }
+  }
+}
+

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:hazardorange_inner_factory"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:hazardorange_factory"
+      }
+    ],
+    "result": {
+      "item": "chisel:hazardorange_inner_factory",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:parquet_birch_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:parquet_birch"
+            }
+        ],
+        "result": {
+            "item": "minecraft:planks",
+            "count": 1,
+            "data": 2
+        }
+    }
+}

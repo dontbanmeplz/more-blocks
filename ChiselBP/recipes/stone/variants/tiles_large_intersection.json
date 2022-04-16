@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:tiles_large_intersection_stone"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:tiles_large_stone"
+      }
+    ],
+    "result": {
+      "item": "chisel:tiles_large_intersection_stone",
+      "count": 1
+    }
+  }
+}

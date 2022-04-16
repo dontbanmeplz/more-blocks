@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:magma_pillarside"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:magma"
+      }
+    ],
+    "result": {
+      "item": "chisel:magma_pillarside",
+      "count": 1
+    }
+  }
+}

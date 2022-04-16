@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:layers_concrete_lightblue_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:layers_concrete_lightblue"
+            }
+        ],
+        "result": {
+            "item": "minecraft:concrete",
+            "count": 1,
+            "data": 3
+        }
+    }
+}

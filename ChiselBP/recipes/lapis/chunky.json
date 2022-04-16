@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:lapis_chunky"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:lapis_block"
+      }
+    ],
+    "result": {
+      "item": "chisel:lapis_chunky",
+      "count": 1
+    }
+  }
+}

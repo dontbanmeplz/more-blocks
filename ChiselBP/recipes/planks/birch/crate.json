@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:crate_birch"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:planks",
+		"data": 2
+      }
+    ],
+    "result": {
+      "item": "chisel:crate_birch",
+      "count": 1
+    }
+  }
+}

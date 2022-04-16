@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:scribbles_3_sandstone"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:sandstone",
+		"data": 0
+      }
+    ],
+    "result": {
+      "item": "chisel:scribbles_3_sandstone",
+      "count": 1
+    }
+  }
+}

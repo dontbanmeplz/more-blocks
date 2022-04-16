@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:chrono_glass_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:chrono_glass"
+            }
+        ],
+        "result": {
+            "item": "minecraft:glass",
+            "count": 1
+        }
+    }
+}

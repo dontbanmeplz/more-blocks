@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:ornate_prismarine_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:ornate_prismarine"
+            }
+        ],
+        "result": {
+            "item": "minecraft:prismarine",
+            "count": 1
+        }
+    }
+}

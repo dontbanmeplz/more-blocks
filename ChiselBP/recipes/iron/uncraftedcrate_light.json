@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:iron_crate_light_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:iron_crate_light"
+            }
+        ],
+        "result": {
+            "item": "minecraft:iron_block",
+            "count": 1
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:dent_intersection_stone"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:dent_stone"
+      }
+    ],
+    "result": {
+      "item": "chisel:dent_intersection_stone",
+      "count": 1
+    }
+  }
+}

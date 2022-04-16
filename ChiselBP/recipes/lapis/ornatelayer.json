@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:lapis_ornatelayer"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:lapis_block"
+      }
+    ],
+    "result": {
+      "item": "chisel:lapis_ornatelayer",
+      "count": 1
+    }
+  }
+}

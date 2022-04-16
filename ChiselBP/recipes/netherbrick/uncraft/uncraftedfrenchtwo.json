@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:frenchtwo_netherbrick_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:frenchtwo_netherbrick"
+            }
+        ],
+        "result": {
+            "item": "minecraft:nether_brick",
+            "count": 1
+        }
+    }
+}

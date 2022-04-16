@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:lapis_smooth_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:lapis_smooth"
+            }
+        ],
+        "result": {
+            "item": "minecraft:lapis_block",
+            "count": 1
+        }
+    }
+}

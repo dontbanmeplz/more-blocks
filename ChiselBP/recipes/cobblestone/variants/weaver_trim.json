@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:weaver_trim_cobblestone"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:weaver_cobblestone"
+      }
+    ],
+    "result": {
+      "item": "chisel:weaver_trim_cobblestone",
+      "count": 1
+    }
+  }
+}
+

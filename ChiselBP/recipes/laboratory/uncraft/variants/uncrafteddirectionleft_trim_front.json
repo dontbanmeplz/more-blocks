@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:directionleft_trim_front_laboratory_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:directionleft_trim_front_laboratory"
+            }
+        ],
+        "result": {
+            "item": "chisel:directionleft_laboratory",
+            "count": 1
+        }
+    }
+}

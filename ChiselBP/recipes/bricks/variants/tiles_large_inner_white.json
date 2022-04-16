@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:tiles_large_bricks_inner_white"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:tiles_large_bricks"
+      }
+    ],
+    "result": {
+      "item": "chisel:bricks_inner_white",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:panel_sandstone_red"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:red_sandstone",
+		"data": 0
+      }
+    ],
+    "result": {
+      "item": "chisel:panel_sandstone_red",
+      "count": 1
+    }
+  }
+}

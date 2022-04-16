@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:jellybean_diorite"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:stone",
+		"data": 4
+      }
+    ],
+    "result": {
+      "item": "chisel:jellybean_diorite",
+      "count": 1
+    }
+  }
+}

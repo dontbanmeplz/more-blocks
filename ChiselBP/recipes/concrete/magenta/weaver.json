@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:weaver_concrete_magenta"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:concrete",
+		"data": 2
+      }
+    ],
+    "result": {
+      "item": "chisel:weaver_concrete_magenta",
+      "count": 1
+    }
+  }
+}
+

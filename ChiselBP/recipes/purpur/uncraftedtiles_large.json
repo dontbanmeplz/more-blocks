@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:tiles_large_purpur_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:tiles_large_purpur"
+            }
+        ],
+        "result": {
+            "item": "minecraft:purpur_block",
+            "count": 1
+        }
+    }
+}

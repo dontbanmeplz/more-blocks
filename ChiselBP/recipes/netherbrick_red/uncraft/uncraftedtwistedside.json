@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:twistedside_red_netherbrick_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:twistedside_red_netherbrick"
+            }
+        ],
+        "result": {
+            "item": "minecraft:red_nether_brick",
+            "count": 1
+        }
+    }
+}

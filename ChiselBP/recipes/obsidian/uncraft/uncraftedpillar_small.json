@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:pillar_small_obsidian_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:pillar_small_obsidian"
+            }
+        ],
+        "result": {
+            "item": "minecraft:obsidian",
+            "count": 1
+        }
+    }
+}

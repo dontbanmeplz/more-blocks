@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:bloodrock_netherrack"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:netherrack"
+      }
+    ],
+    "result": {
+      "item": "chisel:bloodrock_netherrack",
+      "count": 1
+    }
+  }
+}

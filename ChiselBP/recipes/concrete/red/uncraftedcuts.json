@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:cuts_concrete_red_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:cuts_concrete_red"
+            }
+        ],
+        "result": {
+            "item": "minecraft:concrete",
+            "count": 1,
+            "data": 14
+        }
+    }
+}

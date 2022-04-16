@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:dent_sandstone_red_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:dent_sandstone_red"
+            }
+        ],
+        "result": {
+            "item": "minecraft:red_sandstone",
+            "count": 1,
+            "data": 0
+        }
+    }
+}

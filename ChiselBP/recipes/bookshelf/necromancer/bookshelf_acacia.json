@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:necromancer_bookshelf_acacia"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:bookshelf"
+      }
+    ],
+    "result": {
+      "item": "chisel:necromancer_bookshelf_acacia",
+      "count": 1
+    }
+  }
+}

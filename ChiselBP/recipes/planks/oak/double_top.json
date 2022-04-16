@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:double_top_oak"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:planks",
+		"data": 0
+      }
+    ],
+    "result": {
+      "item": "chisel:double_top_oak",
+      "count": 1
+    }
+  }
+}

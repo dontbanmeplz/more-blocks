@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:chunks_obsidian"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:obsidian"
+      }
+    ],
+    "result": {
+      "item": "chisel:chunks_obsidian",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:twistedtop_concrete_blue"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:concrete",
+		"data": 11
+      }
+    ],
+    "result": {
+      "item": "chisel:twistedtop_concrete_blue",
+      "count": 1
+    }
+  }
+}

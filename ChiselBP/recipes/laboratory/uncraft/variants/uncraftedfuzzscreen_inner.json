@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:fuzzscreen_inner_laboratory_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:fuzzscreen_inner_laboratory"
+            }
+        ],
+        "result": {
+            "item": "chisel:fuzzscreen_laboratory",
+            "count": 1
+        }
+    }
+}

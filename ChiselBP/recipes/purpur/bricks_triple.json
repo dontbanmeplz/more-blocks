@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:bricks_triple_purpur"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:purpur_block"
+      }
+    ],
+    "result": {
+      "item": "chisel:bricks_triple_purpur",
+      "count": 1
+    }
+  }
+}

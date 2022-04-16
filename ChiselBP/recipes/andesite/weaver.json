@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:weaver_andesite"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:stone",
+		"data": 6
+      }
+    ],
+    "result": {
+      "item": "chisel:weaver_andesite",
+      "count": 1
+    }
+  }
+}
+

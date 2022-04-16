@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:dent_hardenedclay_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:dent_hardenedclay"
+            }
+        ],
+        "result": {
+            "item": "minecraft:hardened_clay",
+            "count": 1
+        }
+    }
+}

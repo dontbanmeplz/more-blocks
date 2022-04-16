@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:pillarside_basalt_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:pillarside_basalt"
+            }
+        ],
+        "result": {
+            "item": "chisel:raw_basalt",
+            "count": 1
+        }
+    }
+}

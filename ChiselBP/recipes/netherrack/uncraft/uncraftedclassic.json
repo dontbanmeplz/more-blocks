@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:classic_netherrack_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:classic_netherrack"
+            }
+        ],
+        "result": {
+            "item": "minecraft:netherrack",
+            "count": 1
+        }
+    }
+}

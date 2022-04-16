@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:parquet_spruce"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:planks",
+		"data": 1
+      }
+    ],
+    "result": {
+      "item": "chisel:parquet_spruce",
+      "count": 1
+    }
+  }
+}

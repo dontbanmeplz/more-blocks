@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "chisel:crafting_table_from_dark_oak_planks"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "#C"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:planks",
+		"data": 5
+      },
+	  "C": {
+        "item": "minecraft:crafting_table"
+      }
+    },
+    "result": {
+      "item": "chisel:dark_oak_craftingtable",
+      "count": 1
+    }
+  }
+}

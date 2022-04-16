@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:emerald_panelclassic_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:emerald_panelclassic"
+            }
+        ],
+        "result": {
+            "item": "minecraft:emerald_block",
+            "count": 1
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:door_paper"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:box_paper"
+      }
+    ],
+    "result": {
+      "item": "chisel:door_paper",
+      "count": 1
+    }
+  }
+}

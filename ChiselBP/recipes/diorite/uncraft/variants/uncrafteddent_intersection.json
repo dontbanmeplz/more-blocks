@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:dent_intersection_diorite_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:dent_intersection_diorite"
+            }
+        ],
+        "result": {
+            "item": "chisel:dent_diorite",
+            "count": 1
+        }
+    }
+}

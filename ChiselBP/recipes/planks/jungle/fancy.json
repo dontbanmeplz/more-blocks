@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:fancy_jungle"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:planks",
+		"data": 3
+      }
+    ],
+    "result": {
+      "item": "chisel:fancy_jungle",
+      "count": 1
+    }
+  }
+}

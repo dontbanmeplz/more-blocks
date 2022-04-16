@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:lava_chaotic_medium_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:lava_chaotic_medium"
+            }
+        ],
+        "result": {
+            "item": "chisel:lava_cobble",
+            "count": 1
+        }
+    }
+}

@@ -1,0 +1,64 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "chisel:circular_trim_basalt",
+      "properties":{
+		"chisel:facing_direction": [0, 1, 2]
+	  }
+    },
+        "components": {
+			"minecraft:geometry": "geometry.block",
+			"minecraft:destroy_time": 0.5,
+			"minecraft:explosion_resistance": 20,
+			"minecraft:block_light_absorption": 16,
+			"minecraft:map_color": "#717176",
+			"minecraft:loot": "loot_tables/blocks/basalt/basalt_circular_trim.json",
+			"minecraft:on_player_placing": {
+				"event": "set_facing_direction"
+			}
+        },
+		"events":{
+			"set_facing_direction": {
+				"set_block_property":{
+					"chisel:facing_direction": "math.floor( query.block_face / 2.0 )"
+				}
+			}
+		},
+		"permutations":[
+			{
+				"condition": "query.block_property('chisel:facing_direction') == 0",
+				"components": {
+					"minecraft:material_instances":{
+						"*": {
+							"texture": "circular_trim_basalt_UD",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('chisel:facing_direction') == 1",
+				"components": {
+					"minecraft:material_instances":{
+						"*": {
+							"texture": "circular_trim_basalt_NS",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('chisel:facing_direction') == 2",
+				"components": {
+					"minecraft:material_instances":{
+						"*": {
+							"texture": "circular_trim_basalt_EW",
+							"render_method": "opaque"
+						}
+					}
+				}
+			}
+		]
+    }
+}

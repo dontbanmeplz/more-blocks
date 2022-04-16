@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:dent_trim_andesite_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:dent_trim_andesite"
+            }
+        ],
+        "result": {
+            "item": "chisel:dent_andesite",
+            "count": 1
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:modern_iron_fence_glass_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:modern_iron_fence_glass"
+            }
+        ],
+        "result": {
+            "item": "minecraft:glass",
+            "count": 1
+        }
+    }
+}

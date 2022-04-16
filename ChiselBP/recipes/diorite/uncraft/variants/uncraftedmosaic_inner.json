@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:mosaic_diorite_inner_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:diorite_inner"
+            }
+        ],
+        "result": {
+            "item": "chisel:mosaic_diorite",
+            "count": 1
+        }
+    }
+}

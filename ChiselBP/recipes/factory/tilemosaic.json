@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:tilemosaic_factory"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:factory_factory"
+      }
+    ],
+    "result": {
+      "item": "chisel:tilemosaic_factory",
+      "count": 1
+    }
+  }
+}

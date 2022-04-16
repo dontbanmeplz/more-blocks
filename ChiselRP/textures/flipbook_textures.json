@@ -1,0 +1,487 @@
+[
+
+
+    {
+    "flipbook_texture": "textures/blocks/obsidian/greek_top_portal",
+    "atlas_tile": "greek_top_portal_obsidian"
+  },
+      {
+    "flipbook_texture": "textures/blocks/obsidian/greek_vertical_portal",
+    "atlas_tile": "greek_vertical_portal_obsidian"
+  },
+      {
+    "flipbook_texture": "textures/blocks/obsidian/greek_horizontal_portal",
+    "atlas_tile": "greek_horizontal_portal_obsidian"
+  },
+
+	{
+    "flipbook_texture": "textures/blocks/netherbrick/lavabrinstar",
+    "atlas_tile": "lavabrinstar_netherbrick",
+    "ticks_per_frame": 10
+  },
+  	{
+    "flipbook_texture": "textures/blocks/netherbrick/lavabrown",
+    "atlas_tile": "lavabrown_netherbrick",
+    "ticks_per_frame": 10
+  },
+  	{
+    "flipbook_texture": "textures/blocks/netherbrick/lavaobsidian",
+    "atlas_tile": "lavaobsidian_netherbrick",
+    "ticks_per_frame": 10
+  },
+  	{
+    "flipbook_texture": "textures/blocks/netherbrick/lavastonedark",
+    "atlas_tile": "lavastonedark_netherbrick",
+    "ticks_per_frame": 10
+  },
+
+{
+    "flipbook_texture": "textures/blocks/animated/prismarine/array_prismarine",
+    "atlas_tile": "array_prismarine",
+    "ticks_per_frame": 300
+  },
+  {
+    "flipbook_texture": "textures/blocks/animated/prismarine/braid_prismarine",
+    "atlas_tile": "braid_prismarine",
+    "ticks_per_frame": 300
+  },
+  {
+    "flipbook_texture": "textures/blocks/animated/prismarine/bricks_chaotic_prismarine",
+    "atlas_tile": "bricks_chaotic_prismarine",
+    "ticks_per_frame": 300
+  },
+  {
+    "flipbook_texture": "textures/blocks/animated/prismarine/bricks_cracked_prismarine",
+    "atlas_tile": "bricks_cracked_prismarine",
+    "ticks_per_frame": 300
+  },
+  {
+    "flipbook_texture": "textures/blocks/animated/prismarine/bricks_encased_prismarine",
+    "atlas_tile": "bricks_encased_prismarine",
+    "ticks_per_frame": 300
+  },
+  {
+    "flipbook_texture": "textures/blocks/animated/prismarine/bricks_small_prismarine",
+    "atlas_tile": "bricks_small_prismarine",
+    "ticks_per_frame": 300
+  },
+  {
+    "flipbook_texture": "textures/blocks/animated/prismarine/bricks_soft_prismarine",
+    "atlas_tile": "bricks_soft_prismarine",
+    "ticks_per_frame": 300
+  },
+  {
+    "flipbook_texture": "textures/blocks/animated/prismarine/bricks_solid_prismarine",
+    "atlas_tile": "bricks_solid_prismarine",
+    "ticks_per_frame": 300
+  },
+  {
+    "flipbook_texture": "textures/blocks/animated/prismarine/bricks_triple_prismarine",
+    "atlas_tile": "bricks_triple_prismarine",
+    "ticks_per_frame": 300
+  },
+  {
+    "flipbook_texture": "textures/blocks/animated/prismarine/chaotic_medium_prismarine",
+    "atlas_tile": "chaotic_medium_prismarine",
+    "ticks_per_frame": 300
+  },
+  {
+    "flipbook_texture": "textures/blocks/animated/prismarine/chaotic_small_prismarine",
+    "atlas_tile": "chaotic_small_prismarine",
+    "ticks_per_frame": 300
+  },
+  {
+    "flipbook_texture": "textures/blocks/animated/prismarine/circular_prismarine",
+    "atlas_tile": "circular_prismarine",
+    "ticks_per_frame": 300
+  },
+  {
+    "flipbook_texture": "textures/blocks/animated/prismarine/cracked_prismarine",
+    "atlas_tile": "cracked_prismarine",
+    "ticks_per_frame": 300
+  },
+  {
+    "flipbook_texture": "textures/blocks/animated/prismarine/dent_prismarine",
+    "atlas_tile": "dent_prismarine",
+    "ticks_per_frame": 300
+  },
+  {
+    "flipbook_texture": "textures/blocks/animated/prismarine/frenchone_prismarine",
+    "atlas_tile": "frenchone_prismarine",
+    "ticks_per_frame": 300
+  },
+  {
+    "flipbook_texture": "textures/blocks/animated/prismarine/frenchtwo_prismarine",
+    "atlas_tile": "frenchtwo_prismarine",
+    "ticks_per_frame": 300
+  },
+  {
+    "flipbook_texture": "textures/blocks/animated/prismarine/jellybean_prismarine",
+    "atlas_tile": "jellybean_prismarine",
+    "ticks_per_frame": 300
+  },
+  {
+    "flipbook_texture": "textures/blocks/animated/prismarine/layers_prismarine",
+    "atlas_tile": "layers_prismarine",
+    "ticks_per_frame": 300
+  },
+  {
+    "flipbook_texture": "textures/blocks/animated/prismarine/mosaic_prismarine",
+    "atlas_tile": "mosaic_prismarine",
+    "ticks_per_frame": 300
+  },
+  {
+    "flipbook_texture": "textures/blocks/animated/prismarine/ornate_prismarine",
+    "atlas_tile": "ornate_prismarine",
+    "ticks_per_frame": 300
+  },
+    {
+    "flipbook_texture": "textures/blocks/animated/prismarine/panel_prismarine",
+    "atlas_tile": "panel_prismarine",
+    "ticks_per_frame": 300
+  },
+    {
+    "flipbook_texture": "textures/blocks/animated/prismarine/pillarside_prismarine",
+    "atlas_tile": "pillarside_prismarine",
+    "ticks_per_frame": 300
+  },
+      {
+    "flipbook_texture": "textures/blocks/animated/prismarine/pillartop_prismarine",
+    "atlas_tile": "pillartop_prismarine",
+    "ticks_per_frame": 300
+  },
+      {
+    "flipbook_texture": "textures/blocks/animated/prismarine/prism_prismarine",
+    "atlas_tile": "prism_prismarine",
+    "ticks_per_frame": 300
+  },
+      {
+    "flipbook_texture": "textures/blocks/animated/prismarine/road_prismarine",
+    "atlas_tile": "road_prismarine",
+    "ticks_per_frame": 300
+  },
+      {
+    "flipbook_texture": "textures/blocks/animated/prismarine/slanted_prismarine",
+    "atlas_tile": "slanted_prismarine",
+    "ticks_per_frame": 300
+  },
+      {
+    "flipbook_texture": "textures/blocks/animated/prismarine/tiles_large_prismarine",
+    "atlas_tile": "tiles_large_prismarine",
+    "ticks_per_frame": 300
+  },
+      {
+    "flipbook_texture": "textures/blocks/animated/prismarine/tiles_medium_prismarine",
+    "atlas_tile": "tiles_medium_prismarine",
+    "ticks_per_frame": 300
+  },
+      {
+    "flipbook_texture": "textures/blocks/animated/prismarine/tiles_small_prismarine",
+    "atlas_tile": "tiles_small_prismarine",
+    "ticks_per_frame": 300
+  },
+      {
+    "flipbook_texture": "textures/blocks/animated/prismarine/twistedside_prismarine",
+    "atlas_tile": "twistedside_prismarine",
+    "ticks_per_frame": 300
+  },
+      {
+    "flipbook_texture": "textures/blocks/animated/prismarine/twistedtop_prismarine",
+    "atlas_tile": "twistedtop_prismarine",
+    "ticks_per_frame": 300
+  },
+      {
+    "flipbook_texture": "textures/blocks/animated/prismarine/weaver_prismarine",
+    "atlas_tile": "weaver_prismarine",
+    "ticks_per_frame": 300
+  },
+
+{
+    "flipbook_texture": "textures/blocks/animated/magma/magma_braid",
+    "atlas_tile": "magma_braid",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_bricks_cracked",
+    "atlas_tile": "magma_bricks_cracked",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_bricks_encased",
+    "atlas_tile": "magma_bricks_encased",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_bricks_small",
+    "atlas_tile": "magma_bricks_small",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_bricks_soft",
+    "atlas_tile": "magma_bricks_soft",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_bricks_solid",
+    "atlas_tile": "magma_bricks_solid",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_bricks_triple",
+    "atlas_tile": "magma_bricks_triple",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_chaotic_medium",
+    "atlas_tile": "magma_chaotic_medium",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_chaotic_small",
+    "atlas_tile": "magma_chaotic_small",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_circular",
+    "atlas_tile": "magma_circular",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_cracked",
+    "atlas_tile": "magma_cracked",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_dent",
+    "atlas_tile": "magma_dent",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_frenchone",
+    "atlas_tile": "magma_frenchone",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_frenchtwo",
+    "atlas_tile": "magma_frenchtwo",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_layers",
+    "atlas_tile": "magma_layers",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_mosaic",
+    "atlas_tile": "magma_mosaic",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_ornate",
+    "atlas_tile": "magma_ornate",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_panel",
+    "atlas_tile": "magma_panel",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_pillarside",
+    "atlas_tile": "magma_pillarside",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_pillartop",
+    "atlas_tile": "magma_pillartop",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_prism",
+    "atlas_tile": "magma_prism",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_road",
+    "atlas_tile": "magma_road",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_tiles_large",
+    "atlas_tile": "magma_tiles_large",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_tiles_medium",
+    "atlas_tile": "magma_tiles_medium",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_tiles_small",
+    "atlas_tile": "magma_tiles_small",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_twistedside",
+    "atlas_tile": "magma_twistedside",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_twistedtop",
+    "atlas_tile": "magma_twistedtop",
+    "ticks_per_frame": 10
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/magma/magma_weaver",
+    "atlas_tile": "magma_weaver",
+    "ticks_per_frame": 10
+  },
+
+{
+    "flipbook_texture": "textures/blocks/animated/lava/lava_cobble",
+    "atlas_tile": "lava_cobble",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_braid",
+    "atlas_tile": "lava_braid",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_bricks_cracked",
+    "atlas_tile": "lava_bricks_cracked",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_bricks_encased",
+    "atlas_tile": "lava_bricks_encased",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_bricks_small",
+    "atlas_tile": "lava_bricks_small",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_bricks_soft",
+    "atlas_tile": "lava_bricks_soft",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_bricks_solid",
+    "atlas_tile": "lava_bricks_solid",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_bricks_triple",
+    "atlas_tile": "lava_bricks_triple",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_chaotic_medium",
+    "atlas_tile": "lava_chaotic_medium",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_chaotic_small",
+    "atlas_tile": "lava_chaotic_small",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_circular",
+    "atlas_tile": "lava_circular",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_cracked",
+    "atlas_tile": "lava_cracked",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_dent",
+    "atlas_tile": "lava_dent",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_frenchone",
+    "atlas_tile": "lava_frenchone",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_frenchtwo",
+    "atlas_tile": "lava_frenchtwo",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_layers",
+    "atlas_tile": "lava_layers",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_mosaic",
+    "atlas_tile": "lava_mosaic",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_ornate",
+    "atlas_tile": "lava_ornate",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_panel",
+    "atlas_tile": "lava_panel",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_pillarside",
+    "atlas_tile": "lava_pillarside",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_pillartop",
+    "atlas_tile": "lava_pillartop",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_prism",
+    "atlas_tile": "lava_prism",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_road",
+    "atlas_tile": "lava_road",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_tiles_large",
+    "atlas_tile": "lava_tiles_large",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_tiles_medium",
+    "atlas_tile": "lava_tiles_medium",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_tiles_small",
+    "atlas_tile": "lava_tiles_small",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_twistedside",
+    "atlas_tile": "lava_twistedside",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_twistedtop",
+    "atlas_tile": "lava_twistedtop",
+    "ticks_per_frame": 16
+  },
+   {
+    "flipbook_texture": "textures/blocks/animated/lava/lava_weaver",
+    "atlas_tile": "lava_weaver",
+    "ticks_per_frame": 16
+  }
+  
+  
+]

@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:parquet_crimson_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:parquet_crimson"
+            }
+        ],
+        "result": {
+            "item": "minecraft:crimson_planks",
+            "count": 1
+        }
+    }
+}

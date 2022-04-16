@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:circular_bricks_inner_white_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:bricks_inner_white"
+            }
+        ],
+        "result": {
+            "item": "chisel:circular_bricks",
+            "count": 1
+        }
+    }
+}

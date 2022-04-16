@@ -1,0 +1,14 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "chisel:largetile_trim_laboratory",
+					"weight": 1
+				}
+			]
+		}
+	]
+}

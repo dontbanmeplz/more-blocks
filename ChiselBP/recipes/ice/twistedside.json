@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:twistedside_ice"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+       "item": "minecraft:packed_ice"
+      }
+    ],
+    "result": {
+      "item": "chisel:twistedside_ice",
+      "count": 1
+    }
+  }
+}

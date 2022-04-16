@@ -1,0 +1,17 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "chisel:scribbles_5_sandstone",
+      "register_to_creative_menu": true,
+      "is_experimental": false
+    },
+        "components": {
+			"minecraft:destroy_time": 0.5,
+			"minecraft:explosion_resistance": 20,
+			"minecraft:block_light_absorption": 16,
+			"minecraft:unit_cube": {},
+			"minecraft:map_color": "#d0c89e",
+			"minecraft:block_light_emission": 0        }
+    }
+}

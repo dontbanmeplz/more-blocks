@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:chaotic_crimson"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:crimson_planks"
+      }
+    ],
+    "result": {
+      "item": "chisel:chaotic_crimson",
+      "count": 1
+    }
+  }
+}

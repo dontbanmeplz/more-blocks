@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:brim_bookshelf_spruce_two"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:brim_bookshelf_spruce"
+      }
+    ],
+    "result": {
+      "item": "chisel:brim_bookshelf_spruce_two",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:plain_paper"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:box_paper"
+      }
+    ],
+    "result": {
+      "item": "chisel:plain_paper",
+      "count": 1
+    }
+  }
+}

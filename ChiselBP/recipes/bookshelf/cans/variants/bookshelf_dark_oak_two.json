@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:cans_bookshelf_dark_oak_two"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "chisel:cans_bookshelf_dark_oak"
+      }
+    ],
+    "result": {
+      "item": "chisel:cans_bookshelf_dark_oak_two",
+      "count": 1
+    }
+  }
+}

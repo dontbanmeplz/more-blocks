@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "chisel:panel_bricks_uncraft"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "chisel:panel_bricks"
+            }
+        ],
+        "result": {
+            "item": "minecraft:brick_block",
+            "count": 1
+        }
+    }
+}

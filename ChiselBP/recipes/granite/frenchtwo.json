@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "chisel:frenchtwo_granite"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "ingredients": [
+      {
+        "item": "minecraft:stone",
+		"data": 2
+      }
+    ],
+    "result": {
+      "item": "chisel:frenchtwo_granite",
+      "count": 1
+    }
+  }
+}
